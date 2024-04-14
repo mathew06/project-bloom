@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+    <style>
+        /* Style for the 'cross' cursor */
+        #uploadedImage:hover {
+            cursor: crosshair;
+        }
+    </style>
+    <script>
+        function getImageCoordinates(event) {
+            // Get the image element
+            var image = document.getElementById('uploadedImage');
+
+            // Get the bounding rectangle of the image
+            var rect = image.getBoundingClientRect();
+
+            // Calculate the coordinates relative to the image
+            var x = event.clientX - rect.left;
+            var y = event.clientY - rect.top;
+
+            // Log the coordinates (for demonstration)
+            console.log("X Coordinate: " + x + ", Y Coordinate: " + y);
+
+            // Send the coordinates to the backend (you can modify this part)
+            fetch('/process_coordinates', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ x: x, y: y })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Update the result element with the received result
+                document.getElementById('result').innerText = data.result;
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</head>
+<body>
+    <h2>Upload an Image</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" />
+        <input type="submit" value="Upload" />
+    </form>
+    <h2>Uploaded Image: </h2>
+    <img id="uploadedImage" src="../static/Uploads/{{ image_filename }}" alt="image" onclick="getImageCoordinates(event)">
+    <div>
+        <h2 id="result"></h2>
+    </div>
+</body>
+</html>
