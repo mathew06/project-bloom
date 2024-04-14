@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, jsonify
 from colordetection import color_function
+from colordetection import set_imgLocation
 import os
 
 app = Flask(__name__)
@@ -23,7 +24,9 @@ def upload_file():
         return 'No selected file'
     if file:
         filename = 'img.png'
-        file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+        loc = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        file.save(loc)
+        set_imgLocation(loc)
         return redirect(url_for('index', image_filename=filename))
 
 # Route to handle image coordinate processing
