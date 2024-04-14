@@ -1,8 +1,10 @@
 import cv2
 import pandas as pd
 
-img_path = r'C:/Users/Downloads/test-project/flask-server/static/Uploads/img.png'
-img = cv2.imread(img_path)
+def set_imgLocation(loc):
+    img_path = loc
+    global img
+    img = cv2.imread(img_path)
 
 # declaring global variables (are used later on)
 r = g = b = x_pos = y_pos = 0
