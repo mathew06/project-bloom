@@ -1,0 +1,3 @@
+tp-venv/
+__pycache__/
+*.log
