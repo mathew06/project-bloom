@@ -36,7 +36,7 @@
             .then(response => response.json())
             .then(data => {
                 // Update the result element with the received result
-                document.getElementById('result').innerText = data.result;
+                document.getElementById('result').innerText = "Color: " + data.result;
             })
             .catch(error => console.error('Error:', error));
         }
@@ -48,10 +48,9 @@
         <input type="file" name="image" accept="image/*" />
         <input type="submit" value="Upload" />
     </form>
-    <h2>Uploaded Image: </h2>
-    <img id="uploadedImage" src="../static/Uploads/{{ image_filename }}" alt="image" onclick="getImageCoordinates(event)">
     <div>
         <h2 id="result"></h2>
     </div>
+    <img id="uploadedImage" src="../static/Uploads/{{ image_filename }}" alt="image" onclick="getImageCoordinates(event)">
 </body>
 </html>
