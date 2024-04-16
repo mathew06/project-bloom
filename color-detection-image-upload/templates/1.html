@@ -58,9 +58,11 @@
         // JavaScript code goes here
         function answer(type) {
             alert("You have " + type);
+            window.location.href = "{{ url_for('imageupload')}}";
         }
 
         function findOut() {
+            
             window.location.href = "{{ url_for('test1')}}"; // Redirect to test1.html
         }
     </script>

@@ -55,7 +55,7 @@
 <body>
     <div class="container">
         <h1>Which number do you see?</h1>
-        <img src="42.gif" alt="Number Image">
+        <img src="{{ url_for('static', filename='images/42.gif') }}"  alt="Number Image">
         <button class="btn" onclick="answer('402')">Faint 4,2</button>
         <button class="btn" onclick="answer('420')">4,Faint 2</button>
         

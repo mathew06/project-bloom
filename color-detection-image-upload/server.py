@@ -63,7 +63,7 @@ def protonopia():
     return render_template('protonopia.html')
 
 @app.route('/tritanopia',methods=['GET','POST'])
-def tritonopia():
+def tritanopia():
     return render_template('tritanopia.html')
 
 @app.route('/imageupload')

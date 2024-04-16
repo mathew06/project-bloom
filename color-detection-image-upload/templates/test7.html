@@ -55,7 +55,7 @@
 <body>
     <div class="container">
         <h1>Which number do you see?</h1>
-        <img src="6.png" alt="Number Image">
+        <img src="{{ url_for('static', filename='images/6.png') }}"  alt="Number Image">
         <button class="btn" onclick="answer('6')">6</button>
         <button class="btn" onclick="answer('0')">Unable to understand</button>
         

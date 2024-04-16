@@ -66,7 +66,13 @@
         <h2>You have...</h2>
         <h1>Tritanopia!</h1>
         <p>Tritanopia is a condition where <br>a person cannot distinguish <br>between blue and yellow colors.  It<br> is estimated that only one percent <br>of males and females have <br>trinanopia</p>
-        <button  class="btn" >Proceed to colour detection</button>
+        <button  class="btn" onclick="answer('00')">Proceed to colour detection</button>
+        <script>
+            function answer(number) {
+                if (number === '00') {
+                    window.location.href = "{{ url_for('imageupload')}}";
+                }}
+        </script>
     </div>
 </body>
 </html>

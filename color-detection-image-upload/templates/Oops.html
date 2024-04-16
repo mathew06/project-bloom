@@ -65,7 +65,13 @@
     <div class="container">
         <h1>Oops!</h1>
         <p>Seems that you are not <br>colorblind!</p>
-        <button  class="btn" >Proceed to colour detection</button>
+        <button  class="btn" onclick="answer('00')">Proceed to colour detection</button>
+        <script>
+            function answer(number) {
+                if (number === '00') {
+                    window.location.href = "{{ url_for('imageupload')}}";
+                }}
+        </script>
     </div>
 </body>
 </html>
