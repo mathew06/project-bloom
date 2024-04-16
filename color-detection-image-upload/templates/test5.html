@@ -64,10 +64,10 @@
         // JavaScript code goes here
         function answer(number) {
             if (number === '402') {
-                window.location.href = 'protonopia.html';
+                window.location.href = "{{ url_for('protonopia')}}";
             }
             else{
-                window.location.href = 'deotaranopia.html';
+                window.location.href = "{{ url_for('deotaranopia')}}";
             }
         }
     </script>

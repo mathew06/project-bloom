@@ -62,13 +62,13 @@
         // JavaScript code goes here
         function answer(number) {
             if (number === '12') {
-                window.location.href = 'test2.html';
+                window.location.href = "{{ url_for('test2')}}";
             }
             else if (number=='2'){
-                window.location.href = 'oops.html';
+                window.location.href = "{{ url_for('oops')}}";
             }
             else {
-                window.location.href = 'monocromatic.html';
+                window.location.href = "{{ url_for('monocromatic')}}";
             }
         }
     </script>

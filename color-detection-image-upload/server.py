@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 
 # Configure upload folder
-UPLOAD_FOLDER = '/Users/josevjoseph/Documents/web designing/Project:Bloom/backend/static/Uploads'
+UPLOAD_FOLDER = '/Users/josevjoseph/Documents/project-bloom/project-bloom/color-detection-image-upload/static/Uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Route to serve the HTML form
@@ -66,12 +66,14 @@ def protonopia():
 def tritonopia():
     return render_template('tritanopia.html')
 
-
+@app.route('/imageupload')
+def imageupload():
+    return render_template('image_upload.html', image_filename='img.png')
 
 
 # Route to handle file upload
 @app.route('/upload', methods=['POST'])
-def upload_file():
+def upload():
     if 'image' not in request.files:
         return 'No file part'
     file = request.files['image']
@@ -82,7 +84,7 @@ def upload_file():
         loc = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(loc)
         set_imgLocation(loc)
-        return redirect(url_for('index', image_filename=filename))
+        return redirect(url_for('imageupload', image_filename=filename))
 
 # Route to handle image coordinate processing
 @app.route('/process_coordinates', methods=['POST'])
