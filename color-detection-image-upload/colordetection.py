@@ -11,7 +11,7 @@ r = g = b = x_pos = y_pos = 0
 
 # Reading csv file with pandas and giving names to each column
 index = ["color", "color_name", "hex", "R", "G", "B"]
-csv = pd.read_csv('./colors.csv', names=index, header=None)
+csv = pd.read_csv('/Users/josevjoseph/Documents/project-bloom/project-bloom/color-detection-image-upload/colors.csv', names=index, header=None)
 
 
 # function to calculate minimum distance from all colors and get the most matching color
