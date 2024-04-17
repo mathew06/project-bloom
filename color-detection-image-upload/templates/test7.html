@@ -63,8 +63,11 @@
     <script>
         // JavaScript code goes here
         function answer(number) {
-            if (number === '6'|| number=='0') {
+            if (number === '0') {
                 window.location.href = "{{ url_for('tritanopia')}}";
+            }
+            else{
+                window.location.href = "{{ url_for('oops')}}";
             }
             
         }
