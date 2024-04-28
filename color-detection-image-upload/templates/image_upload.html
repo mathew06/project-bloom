@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Upload</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2ead7;
+            
+            height: 100vh;
+        }
+        .all {
+            margin-left: 40%;
+        }
+        /* #form {
+            display: flex;
+            margin-top: 5%;
+            justify-content: center;
+            align-items: center;
+        }
+        #output {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
         /* Style for the 'cross' cursor */
         #uploadedImage:hover {
             cursor: crosshair;
@@ -36,21 +58,27 @@
             .then(response => response.json())
             .then(data => {
                 // Update the result element with the received result
-                document.getElementById('result').innerText = "Color: " + data.result;
+                document.getElementById('result').innerText = "Color: " + data.result[0];
+                document.getElementById('description').innerText = "Description: " + data.result[1];
             })
             .catch(error => console.error('Error:', error));
         }
     </script>
 </head>
 <body>
+    <div class="all">
+    <div id="form">
     <h2>Upload an Image</h2>
     <form action="/upload" method="post" enctype="multipart/form-data">
         <input type="file" name="image" accept="image/*" />
         <input type="submit" value="Upload" />
     </form>
-    <div>
-        <h2 id="result"></h2>
     </div>
-    <img id="uploadedImage" src="../static/Uploads/{{ image_filename }}" alt="image" onclick="getImageCoordinates(event)">
+    <div id="output">
+        <h2 id="result"></h2>
+        <h2 id="description"></h2>
+    </div>
+    <img id="uploadedImage" src="../static/Uploads/{{ image_filename }}" alt="image" onclick="getImageCoordinates(event)" width="500px" height="500px">
+    </div>
 </body>
 </html>

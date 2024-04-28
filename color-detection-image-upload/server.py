@@ -1,12 +1,13 @@
 from flask import Flask, render_template, request, redirect, url_for, jsonify
-from colordetection import color_function
-from colordetection import set_imgLocation
+from clrdtctn import color_function
+from clrdtctn import set_imgLocation
+from imageResize import resize_image
 import os
 
 app = Flask(__name__)
 
 # Configure upload folder
-UPLOAD_FOLDER = '/Users/josevjoseph/Documents/project-bloom/project-bloom/color-detection-image-upload/static/Uploads'
+UPLOAD_FOLDER = './static/Uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Route to serve the HTML form
@@ -16,7 +17,7 @@ def index():
 
 @app.route('/one',methods=['GET','POST'])
 def one():
-    return render_template('1.html')
+    return render_template('home.html')
 
 @app.route('/test1',methods=['GET','POST'])
 def test1():
@@ -70,6 +71,21 @@ def tritanopia():
 def imageupload():
     return render_template('image_upload.html', image_filename='img.png')
 
+@app.route('/camera')
+def camera():
+    return render_template('camera.html')
+
+@app.route('/process_frame', methods=['POST'])
+def process_frame():
+    # Get the image data from the request
+    image_data = request.files['image']
+    # Define the path where the image will be saved
+    image_path = os.path.join(app.config['UPLOAD_FOLDER'], 'frame.jpg')
+    # Save the image to the server
+    image_data.save(image_path)
+    set_imgLocation(image_path)
+    result = color_function(500, 375)
+    return jsonify({'result': result})
 
 # Route to handle file upload
 @app.route('/upload', methods=['POST'])
@@ -81,6 +97,8 @@ def upload():
         return 'No selected file'
     if file:
         filename = 'img.png'
+        # Resize the image
+        file = resize_image(file)
         loc = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(loc)
         set_imgLocation(loc)

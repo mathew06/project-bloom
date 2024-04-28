@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Camera Feed</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+        .all{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #video-container {
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+        }
+        #cross {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            border: 2px white solid;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Live Camera Feed</h1>
+    <div class="all">
+    <div id="video-container">
+        <video id="video" autoplay playsinline></video>
+        <div id="cross"></div>
+        <canvas id="canvas" width="1000" height="750" style="display:none;"></canvas>
+    </div>
+    </div>
+    <div id="output">
+        <h2 id="result"></h2>
+        <h2 id="description"></h2>
+    </div>
+    
+    <script>
+        const videoElement = document.getElementById('video');
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        // Get access to the device camera
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(function(stream) {
+                // Set the video source to the camera stream
+                videoElement.srcObject = stream;
+            })
+            .catch(function(err) {
+                console.error('Error accessing the camera:', err);
+            });
+
+        // Function to capture and send each frame to the backend
+        function captureAndSendFrame() {
+            // Draw the current frame onto the canvas
+            ctx.drawImage(videoElement, 0, 0, canvas.width, canvas.height);
+            // Convert the canvas content to a blob
+            canvas.toBlob(function(blob) {
+                // Create a FormData object
+                const formData = new FormData();
+                // Append the blob to the FormData object with a key named 'image'
+                formData.append('image', blob, 'frame.jpg');
+                // Send the image data to the backend using fetch
+                fetch('/process_frame', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Handle the response from the backend if needed
+                    console.log(data);
+                    document.getElementById('result').innerText = "Color: " + data.result[0];
+                    document.getElementById('description').innerText = "Description: " + data.result[1];
+                })
+                .catch(error => console.error('Error:', error));
+            }, 'image/jpg');
+        }
+
+        // Capture and send each frame at regular intervals
+        setInterval(captureAndSendFrame, 5000);
+            
+    </script>
+</body>
+</html>
