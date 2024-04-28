@@ -17,7 +17,7 @@ def index():
 
 @app.route('/one',methods=['GET','POST'])
 def one():
-    return render_template('home.html')
+    return render_template('1.html')
 
 @app.route('/test1',methods=['GET','POST'])
 def test1():
@@ -66,6 +66,10 @@ def protonopia():
 @app.route('/tritanopia',methods=['GET','POST'])
 def tritanopia():
     return render_template('tritanopia.html')
+
+@app.route('/home',methods=['GET','POST'])
+def home():
+    return render_template('home.html')
 
 @app.route('/imageupload')
 def imageupload():
