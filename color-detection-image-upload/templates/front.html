@@ -42,7 +42,11 @@
     <script>
         setTimeout(function()
         {
-            window.location.href = "{{ url_for('one')}}";
+            if(!document.cookie.includes('landingPage')) {            //check if first-time user
+                window.location.href = "{{ url_for('one')}}";         //proceeds to color-blind types
+            }
+            else
+                window.location.href = "{{ url_for('home')}}";        //proceeds to home-page
         }, 3000);
     </script>
 </body>
