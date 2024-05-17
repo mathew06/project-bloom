@@ -32,6 +32,23 @@
             cursor: crosshair;
         }
     </style>
+</head>
+<body>
+    <div class="all">
+    <div id="form">
+    <h2>Upload an Image</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" />
+        <input type="submit" value="Upload" />
+    </form>
+    </div>
+    <div id="output">
+        <h2 id="colorname"></h2>
+        <h2 id="hex"></h2>
+        <div id="colorInfo"></div>
+    </div>
+    <img id="uploadedImage" src="../static/Uploads/{{ image_filename }}" alt="image" onclick="getImageCoordinates(event)" width="500px" height="500px">
+    </div>
     <script>
         function getImageCoordinates(event) {
             // Get the image element
@@ -57,28 +74,18 @@
             })
             .then(response => response.json())
             .then(data => {
+                var colorInfoDiv = document.getElementById('colorInfo');
                 // Update the result element with the received result
-                document.getElementById('result').innerText = "Color: " + data.result[0];
-                document.getElementById('description').innerText = "Description: " + data.result[1];
+                document.getElementById('colorname').innerText = "Color: " + data.result[0];
+                document.getElementById('hex').innerText = "Hex: #" + data.result[1];
+                colorInfoDiv.innerHTML = `
+                        <p>${data.result[2].description}</p>
+                        <p><strong>Similar Colors:</strong> ${data.result[2].similar_colors.join(', ')}</p>
+                        <p><strong>Contrasting Colors:</strong> ${data.result[2].contrasting_colors.join(', ')}</p>
+                    `;
             })
             .catch(error => console.error('Error:', error));
         }
     </script>
-</head>
-<body>
-    <div class="all">
-    <div id="form">
-    <h2>Upload an Image</h2>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="image" accept="image/*" />
-        <input type="submit" value="Upload" />
-    </form>
-    </div>
-    <div id="output">
-        <h2 id="result"></h2>
-        <h2 id="description"></h2>
-    </div>
-    <img id="uploadedImage" src="../static/Uploads/{{ image_filename }}" alt="image" onclick="getImageCoordinates(event)" width="500px" height="500px">
-    </div>
 </body>
 </html>
