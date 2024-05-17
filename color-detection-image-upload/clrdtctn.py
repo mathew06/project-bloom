@@ -1,5 +1,6 @@
 import cv2
 import pandas as pd
+from colordata import getColorInfo
 
 def set_imgLocation(loc):
     img_path = loc
@@ -22,15 +23,15 @@ def get_color_name(R, G, B):
         if d <= minimum:
             minimum = d
             cname = csv.loc[i, "color"]
-            des = csv.loc[i, "hex"]
-    return cname,des
+            hex = csv.loc[i, "hex"]
+    color_info = getColorInfo(cname)
+    return cname,hex,color_info
 
 def color_function(x, y):
     global b, g, r
     x = int(x)
     y = int(y)
     b, g, r = img[y, x]
-    print(img[y,x])
     b = int(b)
     g = int(g)
     r = int(r)
