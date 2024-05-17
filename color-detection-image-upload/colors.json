@@ -1,0 +1,1514 @@
+[
+    {
+      "name": "Red",
+      "description": "Red is a bold and vibrant hue, often associated with passion, energy, and strength. It commands attention and evokes powerful emotions.",
+      "color_combination": "White, Black",
+      "similar_colors": ["Crimson", "Scarlet", "Ruby", "Carmine"],
+      "contrasting_colors": ["Blue", "Green", "Yellow", "Purple"]
+    },
+    {
+      "name": "Green",
+      "description": "Green is a lush and verdant hue, often associated with nature, growth, and renewal. It symbolizes harmony, balance, and vitality.",
+      "color_combination": "White, Black",
+      "similar_colors": ["Emerald", "Forest Green", "Olive", "Mint"],
+      "contrasting_colors": ["Red", "Blue", "Yellow", "Purple"]
+    },
+    {
+      "name": "Blue",
+      "description": "Blue is a calming and serene hue, often associated with the sky and the sea. It symbolizes stability, trust, and tranquility.",
+      "color_combination": "White, Black",
+      "similar_colors": ["Navy Blue", "Sky Blue", "Royal Blue", "Cyan"],
+      "contrasting_colors": ["Red", "Green", "Yellow", "Orange"]
+    },
+    {
+      "name": "Yellow",
+      "description": "Yellow is a bright and cheerful hue, often associated with sunshine, happiness, and optimism. It symbolizes warmth, energy, and joy.",
+      "color_combination": "White, Black",
+      "similar_colors": ["Gold", "Lemon", "Amber", "Daffodil"],
+      "contrasting_colors": ["Blue", "Green", "Red", "Purple"]
+    },
+    {
+      "name": "Orange",
+      "description": "Orange is a vibrant and energetic hue, often associated with warmth, enthusiasm, and creativity. It combines the energy of red with the cheerfulness of yellow.",
+      "color_combination": "White, Black",
+      "similar_colors": ["Tangerine", "Pumpkin", "Apricot", "Amber"],
+      "contrasting_colors": ["Blue", "Green", "Yellow", "Purple"]
+    },
+    {
+      "name": "Violet",
+      "description": "Violet is a rich and regal hue, often associated with luxury, creativity, and spirituality. It combines the calmness of blue with the energy of red.",
+      "color_combination": "White, Black",
+      "similar_colors": ["Purple", "Lavender", "Plum", "Mauve"],
+      "contrasting_colors": ["Yellow", "Orange", "Green", "Blue"]
+    },
+    {
+      "name": "Indigo",
+      "description": "Indigo is a deep and mysterious hue, often associated with intuition, introspection, and wisdom. It represents the depths of the ocean and the vastness of the night sky.",
+      "color_combination": "White, Black",
+      "similar_colors": ["Navy Blue", "Sapphire", "Midnight Blue", "Dark Purple"],
+      "contrasting_colors": ["Yellow", "Orange", "Green", "Blue"]
+    },
+    {
+      "name": "Black",
+      "description": "Black is a classic and timeless hue, often associated with sophistication, elegance, and power. It represents mystery, strength, and authority.",
+      "color_combination": "White, Gold",
+      "similar_colors": ["Charcoal", "Ebony", "Onyx", "Jet"],
+      "contrasting_colors": ["White", "Silver", "Gold", "Yellow"]
+    },
+    {
+      "name": "White",
+      "description": "White is a pure and pristine hue, often associated with innocence, purity, and simplicity. It symbolizes cleanliness, clarity, and new beginnings.",
+      "color_combination": "Black, Gold",
+      "similar_colors": ["Ivory", "Cream", "Snow", "Pearl"],
+      "contrasting_colors": ["Black", "Charcoal", "Ebony", "Gray"]
+    },
+    {
+      "name": "Grey",
+      "description": "Grey is a neutral and versatile hue, often associated with balance, stability, and sophistication. It represents calmness, maturity, and resilience.",
+      "color_combination": "White, Black",
+      "similar_colors": ["Silver", "Charcoal", "Slate", "Ash"],
+      "contrasting_colors": ["Red", "Blue", "Green", "Yellow"]
+    },
+    {
+      "name": "Brown",
+      "description": "Brown is an earthy and warm hue, often associated with stability, reliability, and comfort. It symbolizes the richness of the soil and the warmth of wood.",
+      "color_combination": "White, Black",
+      "similar_colors": ["Tan", "Beige", "Chocolate", "Chestnut"],
+      "contrasting_colors": ["Blue", "Green", "Yellow", "Orange"]
+    },
+    {
+      "name": "Pink",
+      "description": "Pink is a delicate and romantic hue, often associated with love, femininity, and tenderness. It represents sweetness, affection, and compassion.",
+      "color_combination": "White, Black",
+      "similar_colors": ["Rose", "Mauve", "Blush", "Coral"],
+      "contrasting_colors": ["Blue", "Green", "Yellow", "Purple"]
+    },
+    {
+      "name": "Purple",
+      "description": "Purple is a luxurious and majestic hue, often associated with royalty, creativity, and spirituality. It combines the stability of blue with the energy of red.",
+      "color_combination": "White, Black",
+      "similar_colors": ["Lavender", "Plum", "Violet", "Mauve"],
+      "contrasting_colors": ["Yellow", "Orange", "Green", "Blue"]
+    },
+    {
+      "name": "Magenta",
+      "description": "Magenta is a vibrant and intense hue, often associated with passion, energy, and excitement. It represents the perfect balance between the warmth of red and the coolness of blue.",
+      "color_combination": "White, Black",
+      "similar_colors": ["Fuchsia", "Hot Pink", "Cerise", "Rose"],
+      "contrasting_colors": ["Green", "Yellow", "Orange", "Purple"]
+    },
+    {
+      "name": "Gold",
+      "description": "Gold is a luxurious and radiant hue, often associated with wealth, prosperity, and success. It symbolizes abundance, prestige, and achievement.",
+      "color_combination": "Black, White",
+      "similar_colors": ["Goldenrod", "Amber", "Bronze", "Copper"],
+      "contrasting_colors": ["Blue", "Purple", "Green", "Turquoise"]
+    },
+    {
+      "name": "Silver",
+      "description": "Silver is a sleek and sophisticated hue, often associated with elegance, modernity, and innovation. It represents clarity, purity, and refinement.",
+      "color_combination": "Black, White",
+      "similar_colors": ["Gray", "Platinum", "Steel", "Nickel"],
+      "contrasting_colors": ["Red", "Blue", "Green", "Yellow"]
+    },
+    {
+      "name": "Bronze",
+      "description": "Bronze is a warm and lustrous hue, often associated with strength, endurance, and tradition. It symbolizes victory, resilience, and craftsmanship.",
+      "color_combination": "Black, White",
+      "similar_colors": ["Copper", "Gold", "Rust", "Brown"],
+      "contrasting_colors": ["Blue", "Purple", "Green", "Turquoise"]
+    },
+    {
+      "name": "Olive",
+      "description": "Olive is a earthy and versatile hue, often associated with peace, harmony, and vitality. It represents the richness of the olive tree and the abundance of nature.",
+      "color_combination": "Black, White",
+      "similar_colors": ["Sage", "Khaki", "Army Green", "Moss"],
+      "contrasting_colors": ["Red", "Blue", "Yellow", "Orange"]
+    },
+    {
+      "name": "Maroon",
+      "description": "Maroon is a deep and luxurious hue, often associated with sophistication, elegance, and opulence. It combines the richness of red with the depth of brown.",
+      "color_combination": "Black, White",
+      "similar_colors": ["Burgundy", "Crimson", "Wine", "Bordeaux"],
+      "contrasting_colors": ["Blue", "Green", "Yellow", "Purple"]
+    },
+    {
+      "name": "Charcoal",
+      "description": "Charcoal is a dark and smoky hue, often associated with strength, resilience, and mystery. It represents the depths of the earth and the shadows of the night.",
+      "color_combination": "White, Black",
+      "similar_colors": ["Coal", "Slate", "Graphite", "Ebony"],
+      "contrasting_colors": ["Red", "Blue", "Green", "Yellow"]
+    },
+    {
+      "name": "Cream",
+      "description": "Cream is a soft and creamy hue, often associated with warmth, comfort, and indulgence. It represents the richness of dairy and the coziness of home.",
+      "color_combination": "White, Black",
+      "similar_colors": ["Ivory", "Beige", "Vanilla", "Champagne"],
+      "contrasting_colors": ["Blue", "Green", "Yellow", "Orange"]
+    },
+    {
+      "name": "Tan",
+      "description": "Tan is a warm and sandy hue, often associated with natural beauty, simplicity, and relaxation. It represents the warmth of the sun and the serenity of the beach.",
+      "color_combination": "Black, White",
+      "similar_colors": ["Beige", "Sand", "Khaki", "Camel"],
+      "contrasting_colors": ["Blue", "Green", "Yellow", "Orange"]
+    },
+    {
+        "name": "Teal",
+        "description": "Teal is a sophisticated and calming hue, often associated with clarity, balance, and tranquility. It combines the calming properties of blue with the rejuvenating energy of green.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Turquoise", "Aquamarine", "Peacock", "Jade"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "Mustard",
+        "description": "Mustard is a warm and spicy hue, often associated with vibrancy, energy, and creativity. It represents the zestiness of mustard seeds and the warmth of autumn.",
+        "color_combination": "Black, White",
+        "similar_colors": ["Gold", "Amber", "Dijon", "Saffron"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Magenta"]
+      },
+      {
+        "name": "NavyBlue",
+        "description": "Navy Blue is a deep and sophisticated hue, often associated with authority, stability, and professionalism. It represents the depths of the ocean and the strength of the navy.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Midnight Blue", "Sapphire", "Royal Blue", "Indigo"],
+        "contrasting_colors": ["Yellow", "Orange", "Green", "Pink"]
+      },
+      {
+        "name": "Coral",
+        "description": "Coral is a vibrant and lively hue, often associated with vitality, spontaneity, and creativity. It represents the warmth of coral reefs and the energy of tropical climates.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Salmon", "Peach", "Tangerine", "Apricot"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "Burgundy",
+        "description": "Burgundy is a rich and luxurious hue, often associated with elegance, sophistication, and opulence. It represents the deep red wines of the Burgundy region in France.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Maroon", "Wine", "Crimson", "Ruby"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "Lavender",
+        "description": "Lavender is a soft and soothing hue, often associated with relaxation, tranquility, and spirituality. It represents the calming scent of lavender flowers and the serenity of a peaceful garden.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Lilac", "Violet", "Mauve", "Purple"],
+        "contrasting_colors": ["Yellow", "Orange", "Green", "Blue"]
+      },
+      {
+        "name": "Cyan",
+        "description": "Cyan is a bright and invigorating hue, often associated with clarity, freshness, and innovation. It represents the clear blue skies and the refreshing waters of tropical seas.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Turquoise", "Aquamarine", "Sky Blue", "Teal"],
+        "contrasting_colors": ["Red", "Yellow", "Orange", "Pink"]
+      },
+      {
+        "name": "Peach",
+        "description": "Peach is a soft and delicate hue, often associated with sweetness, innocence, and charm. It represents the blush of a ripe peach and the warmth of a summer day.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Apricot", "Salmon", "Coral", "Tangerine"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "Rust",
+        "description": "Rust is a warm and earthy hue, often associated with ruggedness, durability, and antiquity. It represents the weathering of iron and the passage of time.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Copper", "Bronze", "Burnt Sienna", "Terracotta"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "Ruby",
+        "description": "Ruby is a deep and passionate hue, often associated with love, desire, and vitality. It represents the fiery glow of a precious gemstone and the intensity of the heart.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Crimson", "Maroon", "Burgundy", "Wine"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "LimeGreen",
+        "description": "Lime Green is a vibrant and zesty hue, often associated with freshness, energy, and vitality. It represents the tangy zest of lime fruits and the rejuvenating power of nature.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Chartreuse", "Neon Green", "Electric Green", "Spring Green"],
+        "contrasting_colors": ["Blue", "Purple", "Yellow", "Orange"]
+      },
+      {
+        "name": "Salmon",
+        "description": "Salmon is a soft and warm hue, often associated with comfort, coziness, and relaxation. It represents the delicate pink flesh of salmon fish and the warmth of a sunset.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Coral", "Peach", "Pink", "Apricot"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "Azure",
+        "description": "Azure is a bright and refreshing hue, often associated with clarity, serenity, and tranquility. It represents the clear blue skies and the calmness of a peaceful ocean.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Sky Blue", "Cyan", "Turquoise", "Aquamarine"],
+        "contrasting_colors": ["Red", "Yellow", "Orange", "Pink"]
+      },
+      {
+        "name": "Beige",
+        "description": "Beige is a warm and neutral hue, often associated with simplicity, elegance, and understated beauty. It represents the softness of sand and the coziness of natural fibers.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Tan", "Taupe", "Sand", "Khaki"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "Mint",
+        "description": "Mint is a cool and refreshing hue, often associated with freshness, vitality, and invigoration. It represents the crispness of mint leaves and the rejuvenating power of nature.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Spearmint", "Peppermint", "Sage", "Seafoam Green"],
+        "contrasting_colors": ["Blue", "Purple", "Yellow", "Orange"]
+      },
+      {
+        "name": "SkyBlue",
+        "description": "Sky Blue is a light and airy hue, often associated with freedom, tranquility, and serenity. It represents the vastness of the sky and the boundless possibilities of the future.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Azure", "Cyan", "Baby Blue", "Powder Blue"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "AliceBlue",
+        "description": "Alice Blue is a soft and ethereal hue, often associated with purity, innocence, and tranquility. It represents the clarity of a clear sky and the serenity of a peaceful day.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Powder Blue", "Sky Blue", "Cornflower Blue", "Baby Blue"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "BlueViolet",
+        "description": "Blue Violet is a rich and vibrant hue, often associated with creativity, imagination, and inspiration. It represents the harmony of blue and purple, blending tranquility with depth.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Indigo", "Periwinkle", "Lavender", "Amethyst"],
+        "contrasting_colors": ["Yellow", "Orange", "Green", "Pink"]
+      },
+      {
+        "name": "CadetBlue",
+        "description": "Cadet Blue is a cool and calming hue, often associated with reliability, stability, and trustworthiness. It represents the steadfastness of the military and the dependability of tradition.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Steel Blue", "Slate Blue", "Powder Blue", "Cornflower Blue"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "CornflowerBlue",
+        "description": "Cornflower Blue is a delicate and serene hue, often associated with calmness, tranquility, and inner peace. It represents the softness of cornflower petals and the serenity of a clear blue sky.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Periwinkle", "Sky Blue", "Baby Blue", "Azure"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "DarkSlateBlue",
+        "description": "Dark Slate Blue is a deep and mysterious hue, often associated with introspection, depth, and mystery. It represents the shadows of twilight and the depths of the night sky.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Navy Blue", "Midnight Blue", "Slate Blue", "Indigo"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "DeepSkyBlue",
+        "description": "Deep Sky Blue is a vibrant and refreshing hue, often associated with clarity, optimism, and boundless possibilities. It represents the endless expanse of the sky and the vastness of the universe.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Sky Blue", "Azure", "Cyan", "Turquoise"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "DodgerBlue",
+        "description": "Dodger Blue is a bold and energetic hue, often associated with vitality, enthusiasm, and optimism. It represents the vibrant spirit of the city and the excitement of urban life.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Royal Blue", "Cerulean", "Azure", "Sky Blue"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "LightBlue",
+        "description": "Light Blue is a soft and serene hue, often associated with tranquility, peace, and relaxation. It represents the gentle caress of a summer breeze and the soothing lull of calm waters.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Powder Blue", "Baby Blue", "Sky Blue", "Azure"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "LightCyan",
+        "description": "Light Cyan is a delicate and airy hue, often associated with purity, clarity, and innocence. It represents the soft glow of a clear sky and the purity of untouched snow.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Baby Blue", "Powder Blue", "Sky Blue", "Azure"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "LightSkyBlue",
+        "description": "Light Sky Blue is a soft and dreamy hue, often associated with serenity, tranquility, and inner peace. It represents the calmness of a clear blue sky and the gentle touch of a summer breeze.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Baby Blue", "Powder Blue", "Azure", "Sky Blue"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "LightSlateBlue",
+        "description": "Light Slate Blue is a gentle and soothing hue, often associated with relaxation, calmness, and inner peace. It represents the softness of slate and the tranquility of a clear blue sky.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Slate Blue", "Powder Blue", "Azure", "Sky Blue"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "Aquamarine",
+        "description": "Aquamarine is a fresh and invigorating hue, often associated with purity, clarity, and tranquility. It represents the clear blue waters of the ocean and the serenity of a tropical paradise.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Turquoise", "Cyan", "Teal", "Seafoam Green"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "MediumBlue",
+        "description": "Medium Blue is a classic and versatile hue, often associated with reliability, stability, and trustworthiness. It represents the clear blue skies and the vastness of the ocean.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Royal Blue", "Navy Blue", "Sky Blue", "Azure"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "MediumSlateBlue",
+        "description": "Medium Slate Blue is a calm and serene hue, often associated with tranquility, peace, and inner harmony. It represents the softness of slate and the calmness of a clear blue sky.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Slate Blue", "Powder Blue", "Azure", "Sky Blue"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "MidnightBlue",
+        "description": "Midnight Blue is a deep and mysterious hue, often associated with elegance, sophistication, and mystery. It represents the darkness of the night sky and the enchantment of the moonlight.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Navy Blue", "Dark Slate Blue", "Slate Blue", "Indigo"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "PowderBlue",
+        "description": "Powder Blue is a soft and delicate hue, often associated with innocence, purity, and tranquility. It represents the softness of powdered snow and the serenity of a clear blue sky.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Baby Blue", "Sky Blue", "Azure", "Light Blue"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "RoyalBlue",
+        "description": "Royal Blue is a rich and regal hue, often associated with luxury, elegance, and sophistication. It represents the opulence of royalty and the majesty of the crown.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Navy Blue", "Cobalt Blue", "Indigo", "Sapphire"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "SlateBlue",
+        "description": "Slate Blue is a calm and serene hue, often associated with tranquility, peace, and inner harmony. It represents the softness of slate and the calmness of a clear blue sky.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Powder Blue", "Azure", "Sky Blue", "Medium Slate Blue"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "SteelBlue",
+        "description": "Steel Blue is a cool and calming hue, often associated with strength, stability, and reliability. It represents the resilience of steel and the steadfastness of tradition.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Slate Blue", "Powder Blue", "Azure", "Sky Blue"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "Aqua",
+        "description": "Aqua is a refreshing and invigorating hue, often associated with clarity, purity, and renewal. It represents the crystalline waters of the ocean and the freshness of a summer rain.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Turquoise", "Cyan", "Teal", "Aquamarine"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "TrueIrisBlue",
+        "description": "True Iris Blue is a deep and captivating hue, often associated with mystery, depth, and intrigue. It represents the enigmatic allure of the iris flower and the depths of the human soul.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Indigo", "Violet", "Deep Blue", "Midnight Blue"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "Turquoise",
+        "description": "Turquoise is a vibrant and refreshing hue, often associated with tranquility, balance, and spiritual healing. It represents the clear blue waters of the ocean and the rejuvenating power of nature.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Aquamarine", "Cyan", "Teal", "Seafoam Green"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "DarkTurquoise",
+        "description": "Dark Turquoise is a deep and mysterious hue, often associated with introspection, depth, and tranquility. It represents the depths of the ocean and the calmness of a clear blue sky.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Turquoise", "Aquamarine", "Teal", "Slate Blue"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "MediumTurquoise",
+        "description": "Medium Turquoise is a vibrant and refreshing hue, often associated with tranquility, balance, and spiritual healing. It represents the clear blue waters of the ocean and the rejuvenating power of nature.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Turquoise", "Aquamarine", "Teal", "Light Sea Green"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "PaleTurquoise",
+        "description": "Pale Turquoise is a soft and soothing hue, often associated with calmness, tranquility, and inner peace. It represents the gentle caress of a summer breeze and the serenity of calm waters.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Aquamarine", "Turquoise", "Light Cyan", "Light Sky Blue"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "NeonBlue",
+        "description": "Neon Blue is a vibrant and electrifying hue, often associated with energy, excitement, and modernity. It represents the boldness of neon lights and the dynamism of urban life.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Electric Blue", "Cerulean", "Cyan", "Sky Blue"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "RichBlue",
+        "description": "Rich Blue is a deep and luxurious hue, often associated with elegance, sophistication, and opulence. It represents the richness of the night sky and the allure of precious gemstones.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Navy Blue", "Royal Blue", "Indigo", "Sapphire"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "SummerSky",
+        "description": "Summer Sky is a bright and cheerful hue, often associated with warmth, joy, and optimism. It represents the clear blue skies of summer and the carefree days of childhood.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Azure", "Cyan", "Baby Blue", "Powder Blue"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "FreeSpeechBlue",
+        "description": "Free Speech Blue is a bold and expressive hue, often associated with freedom, democracy, and human rights. It represents the power of speech and the importance of expressing oneself.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Electric Blue", "Cerulean", "Cyan", "Sky Blue"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "RosyBrown",
+        "description": "Rosy Brown is a warm and earthy hue, often associated with comfort, stability, and reliability. It represents the warmth of rosy cheeks and the richness of fertile soil.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Sandy Brown", "Sienna", "Tan", "Beige"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "SaddleBrown",
+        "description": "Saddle Brown is a rich and rustic hue, often associated with warmth, durability, and tradition. It represents the rugged beauty of leather saddles and the timeless appeal of rustic decor.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Chocolate", "Brown", "Tan", "Sienna"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "SandyBrown",
+        "description": "Sandy Brown is a warm and inviting hue, often associated with comfort, relaxation, and natural beauty. It represents the softness of sandy beaches and the warmth of a summer sunset.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Tan", "Beige", "Khaki", "Wheat"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "DarkBrown",
+        "description": "Dark Brown is a rich and earthy hue, often associated with stability, strength, and reliability. It represents the warmth of dark chocolate and the depth of fertile soil.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Chocolate", "Coffee", "Mahogany", "Chestnut"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "Burlywood",
+        "description": "Burlywood is a warm and rustic hue, often associated with natural beauty, ruggedness, and simplicity. It represents the rugged charm of weathered wood and the timeless appeal of rustic decor.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Tan", "Beige", "Sandy Brown", "Khaki"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "Chocolate",
+        "description": "Chocolate is a rich and decadent hue, often associated with indulgence, luxury, and comfort. It represents the irresistible allure of fine chocolate and the warmth of a cozy fireplace.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Brown", "Dark Brown", "Chestnut", "Coffee"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "Peru",
+        "description": "Peru is a warm and earthy hue, often associated with natural beauty, warmth, and tradition. It represents the richness of fertile soil and the timeless appeal of rustic decor.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Sandy Brown", "Sienna", "Tan", "Brown"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "DarkTan",
+        "description": "Dark Tan is a rich and warm hue, often associated with natural beauty, comfort, and relaxation. It represents the warmth of sun-kissed skin and the timeless allure of a summer sunset.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Tan", "Sandy Brown", "Beige", "Khaki"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "DarkWood",
+        "description": "Dark Wood is a rich and earthy hue, often associated with warmth, comfort, and natural beauty. It represents the richness of aged wood and the timeless appeal of rustic decor.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Mahogany", "Chocolate", "Brown", "Chestnut"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "LightWood",
+        "description": "Light Wood is a soft and natural hue, often associated with warmth, simplicity, and natural beauty. It represents the lightness of birchwood and the tranquility of a forest glade.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Birch", "Blonde", "Beige", "Tan"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "MediumWood",
+        "description": "Medium Wood is a warm and inviting hue, often associated with natural beauty, stability, and tradition. It represents the timeless appeal of polished wood and the warmth of a cozy fireplace.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Oak", "Chestnut", "Brown", "Mahogany"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "Sienna",
+        "description": "Sienna is a rich and earthy hue, often associated with warmth, natural beauty, and rustic charm. It represents the richness of the earth and the timeless allure of rustic decor.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Sandy Brown", "Brown", "Peru", "Tan"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "DarkGreen",
+        "description": "Dark Green is a deep and lush hue, often associated with growth, renewal, and vitality. It represents the richness of emerald forests and the abundance of the natural world.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Forest Green", "Hunter Green", "Olive Green", "Pine Green"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "DarkGreenCopper",
+        "description": "Dark Green Copper is a rich and earthy hue, often associated with warmth, tradition, and natural beauty. It represents the patina of aged copper and the timeless appeal of rustic decor.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Dark Green", "Copper", "Bronze", "Brown"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "DarkKhaki",
+        "description": "Dark Khaki is a rich and earthy hue, often associated with warmth, natural beauty, and ruggedness. It represents the richness of fertile soil and the timeless appeal of rustic decor.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Khaki", "Olive", "Tan", "Beige"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "DarkOliveGreen",
+        "description": "Dark Olive Green is a deep and rich hue, often associated with nature, stability, and endurance. It represents the lushness of olive groves and the strength of ancient trees.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Olive Green", "Forest Green", "Hunter Green", "Army Green"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "DarkSeaGreen",
+        "description": "Dark Sea Green is a soothing and tranquil hue, often associated with serenity, calmness, and balance. It represents the gentle waves of the sea and the tranquility of a peaceful shore.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Sea Green", "Pale Green", "Light Sea Green", "Medium Sea Green"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "ForestGreen",
+        "description": "Forest Green is a deep and vibrant hue, often associated with growth, vitality, and abundance. It represents the lushness of dense forests and the vitality of the natural world.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Dark Green", "Hunter Green", "Olive Green", "Pine Green"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "GreenYellow",
+        "description": "Green Yellow is a vibrant and energetic hue, often associated with freshness, vitality, and growth. It represents the lushness of springtime and the vibrancy of new beginnings.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Lime Green", "Spring Green", "Chartreuse", "Lawn Green"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "LawnGreen",
+        "description": "Lawn Green is a bright and cheerful hue, often associated with vitality, growth, and renewal. It represents the lushness of a well-tended lawn and the vibrancy of springtime.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Chartreuse", "Green Yellow", "Spring Green", "Lime Green"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "LightSeaGreen",
+        "description": "Light Sea Green is a soothing and refreshing hue, often associated with tranquility, calmness, and serenity. It represents the gentle waves of the sea and the tranquility of a peaceful shore.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Sea Green", "Medium Sea Green", "Dark Sea Green", "Teal"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "LimeGreen",
+        "description": "Lime Green is a bright and energetic hue, often associated with freshness, vitality, and youthfulness. It represents the zestiness of freshly squeezed lime and the vibrancy of new growth.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Chartreuse", "Green Yellow", "Spring Green", "Lawn Green"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "MediumSeaGreen",
+        "description": "Medium Sea Green is a soothing and calming hue, often associated with tranquility, balance, and renewal. It represents the gentle waves of the sea and the tranquility of a peaceful shore.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Sea Green", "Light Sea Green", "Dark Sea Green", "Teal"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "MediumSpringGreen",
+        "description": "Medium Spring Green is a vibrant and lively hue, often associated with energy, growth, and vitality. It represents the freshness of springtime and the vibrancy of new beginnings.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Lime Green", "Chartreuse", "Green Yellow", "Lawn Green"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "MintCream",
+        "description": "Mint Cream is a soft and soothing hue, often associated with freshness, purity, and tranquility. It represents the coolness of mint leaves and the serenity of a calm breeze.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Honeydew", "Light Cyan", "Azure", "Light Blue"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "OliveDrab",
+        "description": "Olive Drab is a rugged and earthy hue, often associated with strength, durability, and resilience. It represents the resilience of olive trees and the steadfastness of tradition.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Olive Green", "Dark Olive Green", "Forest Green", "Khaki"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "PaleGreen",
+        "description": "Pale Green is a soft and delicate hue, often associated with freshness, purity, and renewal. It represents the gentle caress of a spring breeze and the freshness of new growth.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Seafoam Green", "Mint Cream", "Light Green", "Aquamarine"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "SeaGreen",
+        "description": "Sea Green is a soothing and tranquil hue, often associated with calmness, tranquility, and balance. It represents the gentle waves of the sea and the tranquility of a peaceful shore.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Light Sea Green", "Medium Sea Green", "Dark Sea Green", "Teal"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "SpringGreen",
+        "description": "Spring Green is a vibrant and lively hue, often associated with growth, renewal, and vitality. It represents the freshness of springtime and the vibrancy of new beginnings.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Lime Green", "Chartreuse", "Green Yellow", "Medium Spring Green"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "YellowGreen",
+        "description": "Yellow Green is a vibrant and energetic hue, often associated with growth, vitality, and freshness. It represents the lushness of springtime and the vibrancy of new beginnings.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Chartreuse", "Lawn Green", "Green Yellow", "Spring Green"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "Chartreuse",
+        "description": "Chartreuse is a bold and vibrant hue, often associated with energy, vitality, and freshness. It represents the zestiness of freshly squeezed lime and the vibrancy of new growth.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Lime Green", "Spring Green", "Green Yellow", "Lawn Green"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "Khaki",
+        "description": "Khaki is a warm and earthy hue, often associated with natural beauty, ruggedness, and simplicity. It represents the warmth of sun-kissed sand and the timeless appeal of rustic decor.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Tan", "Beige", "Sandy Brown", "Dark Khaki"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "DarkOliveGreen",
+        "description": "Dark Olive Green is a deep and rich hue, often associated with nature, stability, and endurance. It represents the lushness of olive groves and the strength of ancient trees.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Olive Green", "Forest Green", "Hunter Green", "Army Green"],
+        "contrasting_colors": ["Orange", "Red", "Yellow", "Pink"]
+      },
+      {
+        "name": "DarkOrange",
+        "description": "Dark Orange is a rich and warm hue, often associated with autumn, warmth, and energy. It represents the richness of fall foliage and the warmth of a crackling fire.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Orange", "Burnt Orange", "Copper", "Sienna"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "LightCoral",
+        "description": "Light Coral is a soft and delicate hue, often associated with warmth, gentleness, and femininity. It represents the blush of a rosy cheek and the softness of a gentle breeze.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Coral", "Salmon", "Peach", "Pink"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "LightSalmon",
+        "description": "Light Salmon is a soft and soothing hue, often associated with warmth, tranquility, and comfort. It represents the gentle glow of a sunset and the serenity of a calm sea.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Salmon", "Peach", "Coral", "Light Coral"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "PeachPuff",
+        "description": "Peach Puff is a soft and delicate hue, often associated with warmth, gentleness, and femininity. It represents the softness of a peach and the warmth of a gentle hug.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Peach", "Salmon", "Light Salmon", "Coral"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "Bisque",
+        "description": "Bisque is a warm and inviting hue, often associated with comfort, coziness, and warmth. It represents the softness of baked goods and the warmth of a cozy fireplace.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Beige", "Tan", "Wheat", "Antique White"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "Honeydew",
+        "description": "Honeydew is a soft and soothing hue, often associated with freshness, purity, and tranquility. It represents the sweetness of ripe melons and the coolness of a refreshing breeze.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Mint Cream", "Light Cyan", "Azure", "Light Blue"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "DeepPink",
+        "description": "Deep Pink is a vibrant and bold hue, often associated with passion, energy, and intensity. It represents the fiery heat of a passionate embrace and the excitement of a lively dance.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Hot Pink", "Magenta", "Fuchsia", "Crimson"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "HotPink",
+        "description": "Hot Pink is a bold and vibrant hue, often associated with passion, energy, and excitement. It represents the fiery heat of passion and the vibrancy of youthfulness.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Deep Pink", "Magenta", "Fuchsia", "Crimson"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "IndianRed",
+        "description": "Indian Red is a warm and earthy hue, often associated with richness, tradition, and natural beauty. It represents the richness of Indian spices and the warmth of a cozy hearth.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Firebrick", "Maroon", "Brown", "Sienna"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "LightPink",
+        "description": "Light Pink is a soft and delicate hue, often associated with femininity, gentleness, and romance. It represents the blush of a rosy cheek and the softness of a gentle caress.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Pink", "Blush", "Rose", "PeachPuff"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "MediumVioletRed",
+        "description": "Medium Violet Red is a bold and vibrant hue, often associated with passion, energy, and intensity. It represents the fiery heat of passion and the excitement of a lively dance.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Violet Red", "Hot Pink", "Deep Pink", "Magenta"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "MistyRose",
+        "description": "Misty Rose is a soft and delicate hue, often associated with romance, innocence, and purity. It represents the softness of a gentle breeze and the purity of a dewy rose.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Blush", "Rose", "Light Pink", "PeachPuff"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "OrangeRed",
+        "description": "Orange Red is a vibrant and energetic hue, often associated with passion, excitement, and intensity. It represents the fiery heat of a blazing fire and the vibrancy of a lively dance.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Red Orange", "Vermilion", "Scarlet", "Tomato"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "PaleVioletRed",
+        "description": "Pale Violet Red is a soft and delicate hue, often associated with romance, innocence, and femininity. It represents the softness of a gentle breeze and the blush of a rosy cheek.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Blush", "Misty Rose", "Light Pink", "PeachPuff"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "VioletRed",
+        "description": "Violet Red is a bold and vibrant hue, often associated with passion, energy, and intensity. It represents the fiery heat of passion and the excitement of a lively dance.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Medium Violet Red", "Hot Pink", "Deep Pink", "Magenta"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "Firebrick",
+        "description": "Firebrick is a warm and earthy hue, often associated with strength, stability, and endurance. It represents the timeless appeal of brick buildings and the warmth of a cozy hearth.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Indian Red", "Maroon", "Brown", "Sienna"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "Flesh",
+        "description": "Flesh is a soft and delicate hue, often associated with warmth, gentleness, and femininity. It represents the softness of human skin and the warmth of a loving touch.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Peach", "Salmon", "Light Salmon", "Coral"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "Tomato",
+        "description": "Tomato is a bold and vibrant hue, often associated with energy, excitement, and intensity. It represents the vibrancy of ripe tomatoes and the zestiness of spicy salsa.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Red", "Scarlet", "Crimson", "Fire Engine Red"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "DustyRose",
+        "description": "Dusty Rose is a soft and delicate hue, often associated with romance, innocence, and femininity. It represents the softness of a gentle breeze and the blush of a rosy cheek.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Blush", "Misty Rose", "Light Pink", "PeachPuff"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "Scarlet",
+        "description": "Scarlet is a bold and vibrant hue, often associated with passion, energy, and intensity. It represents the fiery heat of passion and the vibrancy of life.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Red", "Crimson", "Vermilion", "Fire Engine Red"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "SpicyPink",
+        "description": "Spicy Pink is a bold and vibrant hue, often associated with passion, energy, and excitement. It represents the fiery heat of passion and the zestiness of life.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Hot Pink", "Magenta", "Fuchsia", "Deep Pink"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "DarkOrchid",
+        "description": "Dark Orchid is a rich and luxurious hue, often associated with royalty, elegance, and sophistication. It represents the opulence of orchid blooms and the allure of midnight.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Purple", "Indigo", "Violet", "Plum"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
+      },
+      {
+        "name": "DarkViolet",
+        "description": "Dark Violet is a deep and mysterious hue, often associated with creativity, spirituality, and introspection. It represents the depth of the night sky and the enigma of the unknown.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Violet", "Purple", "Indigo", "Deep Purple"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
+      },
+      {
+        "name": "LavenderBlush",
+        "description": "Lavender Blush is a soft and delicate hue, often associated with romance, innocence, and purity. It represents the softness of a gentle breeze and the purity of a dewy rose.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Blush", "Misty Rose", "Light Pink", "PeachPuff"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
+      },
+      {
+        "name": "MediumOrchid",
+        "description": "Medium Orchid is a soft and soothing hue, often associated with tranquility, calmness, and relaxation. It represents the serenity of a quiet meadow and the peace of a calm sea.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Orchid", "Violet", "Purple", "Lavender"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
+      },
+      {
+        "name": "MediumPurple",
+        "description": "Medium Purple is a soft and soothing hue, often associated with tranquility, calmness, and relaxation. It represents the serenity of a quiet meadow and the peace of a calm sea.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Purple", "Violet", "Indigo", "Lavender"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
+      },
+      {
+        "name": "Orchid",
+        "description": "Orchid is a soft and soothing hue, often associated with tranquility, calmness, and relaxation. It represents the serenity of a quiet meadow and the peace of a calm sea.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Medium Orchid", "Violet", "Purple", "Lavender"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
+      },
+      {
+        "name": "Plum",
+        "description": "Plum is a rich and luxurious hue, often associated with elegance, sophistication, and refinement. It represents the opulence of ripe plums and the allure of luxury.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Purple", "Violet", "Indigo", "Dark Purple"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
+      },
+      {
+        "name": "Thistle",
+        "description": "Thistle is a soft and delicate hue, often associated with romance, innocence, and femininity. It represents the softness of a gentle breeze and the purity of a dewy rose.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Lavender", "Misty Rose", "Light Pink", "PeachPuff"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
+      },
+      {
+        "name": "AntiqueWhite",
+        "description": "Antique White is a soft and timeless hue, often associated with tradition, elegance, and sophistication. It represents the charm of antique lace and the warmth of a cozy hearth.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Ivory", "Beige", "Linen", "Old Lace"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
+      },
+      {
+        "name": "FloralWhite",
+        "description": "Floral White is a soft and delicate hue, often associated with purity, innocence, and femininity. It represents the softness of a gentle breeze and the purity of a dewy rose.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Linen", "Ivory", "Snow", "Ghost White"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
+      },
+      {
+        "name": "GhostWhite",
+        "description": "Ghost White is a soft and delicate hue, often associated with purity, innocence, and tranquility. It represents the softness of a gentle breeze and the serenity of a calm sea.",
+        "color_combination": "White, Black",
+        "similar_colors": ["White Smoke", "Floral White", "Snow", "Ivory"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
+      },
+      {
+        "name": "NavajoWhite",
+        "description": "Navajo White is a warm and inviting hue, often associated with comfort, coziness, and warmth. It represents the softness of Navajo blankets and the warmth of a cozy fireplace.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Bisque", "Papaya Whip", "Peach Puff", "Blanched Almond"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
+      },
+      {
+        "name": "OldLace",
+        "description": "Old Lace is a soft and delicate hue, often associated with nostalgia, tradition, and elegance. It represents the charm of vintage lace and the warmth of cherished memories.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Antique White", "Linen", "Ivory", "Floral White"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
+      },
+      {
+        "name": "WhiteSmoke",
+        "description": "White Smoke is a soft and delicate hue, often associated with purity, innocence, and cleanliness. It represents the softness of a gentle breeze and the purity of freshly fallen snow.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Ghost White", "Floral White", "Snow", "Ivory"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
+      },
+      {
+        "name": "Gainsboro",
+        "description": "Gainsboro is a soft and delicate hue, often associated with elegance, refinement, and sophistication. It represents the subtle charm of gray tones and the understated beauty of simplicity.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Light Grey", "Silver", "Light Slate Grey", "White Smoke"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
+      },
+      {
+        "name": "Ivory",
+        "description": "Ivory is a soft and delicate hue, often associated with purity, innocence, and elegance. It represents the softness of ivory tusks and the purity of freshly fallen snow.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Floral White", "Ghost White", "Snow", "Antique White"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
+      },
+      {
+        "name": "Linen",
+        "description": "Linen is a soft and timeless hue, often associated with tradition, elegance, and sophistication. It represents the charm of antique fabrics and the warmth of a cozy hearth.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Antique White", "Ivory", "Beige", "Old Lace"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
+      },
+      {
+        "name": "Seashell",
+        "description": "Seashell is a soft and delicate hue, often associated with purity, innocence, and tranquility. It represents the softness of a gentle breeze and the serenity of a calm sea.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Peach Puff", "Blanched Almond", "Misty Rose", "Navajo White"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
+      },
+      {
+        "name": "Snow",
+        "description": "Snow is a soft and delicate hue, often associated with purity, innocence, and tranquility. It represents the softness of freshly fallen snow and the purity of a winter landscape.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Ivory", "Floral White", "Ghost White", "Antique White"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
+      },
+      {
+        "name": "Wheat",
+        "description": "Wheat is a warm and earthy hue, often associated with abundance, nourishment, and sustenance. It represents the golden fields of ripe wheat and the warmth of a sunny day.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Tan", "Beige", "Khaki", "Bisque"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "Quartz",
+        "description": "Quartz is a clear and translucent hue, often associated with purity, clarity, and enlightenment. It represents the beauty of natural quartz crystals and the clarity of a calm mind.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Crystal", "Clear", "White", "Translucent"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "DarkGoldenrod",
+        "description": "Dark Goldenrod is a rich and luxurious hue, often associated with wealth, opulence, and prosperity. It represents the shimmering glow of goldenrod flowers and the richness of autumn harvests.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Goldenrod", "Gold", "Bronze", "Copper"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "LemonChiffon",
+        "description": "Lemon Chiffon is a soft and delicate hue, often associated with freshness, brightness, and vitality. It represents the lightness of a summer breeze and the zestiness of lemon zest.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Pale Yellow", "Light Yellow", "Cream", "Ivory"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "LightGoldenrod",
+        "description": "Light Goldenrod is a soft and soothing hue, often associated with warmth, comfort, and serenity. It represents the soft glow of goldenrod flowers and the warmth of a sunny day.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Goldenrod", "Gold", "Bronze", "Copper"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "LightGoldenrodYellow",
+        "description": "Light Goldenrod Yellow is a soft and soothing hue, often associated with warmth, comfort, and serenity. It represents the soft glow of goldenrod flowers and the warmth of a sunny day.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Goldenrod", "Gold", "Bronze", "Copper"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "LightYellow",
+        "description": "Light Yellow is a soft and delicate hue, often associated with warmth, brightness, and vitality. It represents the soft glow of sunlight and the warmth of a sunny day.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Pale Yellow", "Lemon Chiffon", "Cream", "Ivory"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "PaleGoldenrod",
+        "description": "Pale Goldenrod is a soft and soothing hue, often associated with warmth, comfort, and tranquility. It represents the soft glow of goldenrod flowers and the serenity of a calm day.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Goldenrod", "Gold", "Bronze", "Copper"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "PapayaWhip",
+        "description": "Papaya Whip is a soft and delicate hue, often associated with sweetness, freshness, and vitality. It represents the tropical allure of ripe papayas and the freshness of a summer breeze.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Peach Puff", "Blanched Almond", "Misty Rose", "Navajo White"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "Cornsilk",
+        "description": "Cornsilk is a soft and delicate hue, often associated with purity, innocence, and tranquility. It represents the softness of a gentle breeze and the serenity of a calm sea.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Peach Puff", "Blanched Almond", "Misty Rose", "Navajo White"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "Goldenrod",
+        "description": "Goldenrod is a warm and vibrant hue, often associated with sunlight, happiness, and positivity. It represents the golden glow of a summer sunset and the warmth of a friendly smile.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Gold", "Dark Goldenrod", "Light Goldenrod", "Pale Goldenrod"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "Moccasin",
+        "description": "Moccasin is a soft and earthy hue, often associated with comfort, warmth, and coziness. It represents the softness of suede moccasins and the warmth of a cozy fireplace.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Tan", "Beige", "Wheat", "Khaki"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "Copper",
+        "description": "Copper is a rich and lustrous hue, often associated with strength, durability, and elegance. It represents the timeless beauty of copper metal and the warmth of a glowing fire.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Bronze", "Gold", "Dark Copper", "Light Copper"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "CoolCopper",
+        "description": "Cool Copper is a rich and lustrous hue, often associated with strength, durability, and elegance. It represents the timeless beauty of copper metal and the warmth of a glowing fire.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Bronze", "Gold", "Dark Copper", "Light Copper"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "GreenCopper",
+        "description": "Green Copper is a rich and lustrous hue, often associated with strength, durability, and elegance. It represents the timeless beauty of copper metal and the warmth of a glowing fire.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Bronze", "Gold", "Dark Copper", "Light Copper"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "Brass",
+        "description": "Brass is a warm and lustrous hue, often associated with strength, durability, and elegance. It represents the timeless beauty of brass metal and the warmth of a glowing fire.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Bronze", "Gold", "Dark Copper", "Light Copper"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "BrightGold",
+        "description": "Bright Gold is a rich and vibrant hue, often associated with wealth, opulence, and luxury. It represents the shimmering glow of gold and the richness of a prosperous life.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Gold", "Goldenrod", "Dark Goldenrod", "Light Goldenrod"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "OldGold",
+        "description": "Old Gold is a rich and antique hue, often associated with tradition, heritage, and history. It represents the timeless beauty of aged gold and the richness of bygone eras.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Gold", "Goldenrod", "Dark Goldenrod", "Light Goldenrod"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "LightSteelBlue",
+        "description": "Light Steel Blue is a soft and soothing hue, often associated with tranquility, calmness, and relaxation. It represents the serenity of a calm sea and the softness of a summer sky.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Steel Blue", "Sky Blue", "Light Blue", "Powder Blue"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "Pumice",
+        "description": "Pumice is a light, muted gray with a slight green undertone, often associated with calmness and neutrality. It symbolizes balance and sophistication.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Stack", "Tiara", "Gunsmoke", "PaleSlate"],
+        "contrasting_colors": ["Red", "Blue", "Yellow", "Purple"]
+      },
+      {
+        "name": "Stack",
+        "description": "Stack is a medium gray color that exudes stability and reliability. It is often used in design to convey a sense of balance and neutrality.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Pumice", "Gunsmoke", "NaturalGray", "Hurricane"],
+        "contrasting_colors": ["Red", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "Tiara",
+        "description": "Tiara is a soft, light gray with a hint of blue, evoking a sense of tranquility and calm. It is often used in design for its soothing and neutral qualities.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Pumice", "LinkWater", "PaleSlate", "RockBlue"],
+        "contrasting_colors": ["Red", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "Gunsmoke",
+        "description": "Gunsmoke is a dark gray with a subtle blue undertone, often associated with modernity and sophistication. It symbolizes strength and reliability.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Pumice", "Stack", "NaturalGray", "DustyGray"],
+        "contrasting_colors": ["Red", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "NaturalGray",
+        "description": "NaturalGray is a neutral gray color, symbolizing balance, calm, and neutrality. It is often used in design for its versatility and timeless appeal.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Pumice", "Gunsmoke", "DustyGray", "Hurricane"],
+        "contrasting_colors": ["Red", "Blue", "Yellow", "Purple"]
+      },
+      {
+        "name": "SoftAmber",
+        "description": "SoftAmber is a warm, light yellow-brown color that evokes a sense of comfort and coziness. It is often associated with autumn and natural beauty.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Squirrel", "ClayCreek", "BurntUmber", "PottersClay"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "Squirrel",
+        "description": "Squirrel is a medium gray-brown color that conveys a sense of earthiness and natural beauty. It is often associated with stability and reliability.",
+        "color_combination": "White, Black",
+        "similar_colors": ["SoftAmber", "ClayCreek", "BurntUmber", "PottersClay"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "PaleSlate",
+        "description": "PaleSlate is a soft, light gray with a hint of blue, often associated with calmness and tranquility. It symbolizes balance and sophistication.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Pumice", "Stack", "Tiara", "LinkWater"],
+        "contrasting_colors": ["Red", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "Hurricane",
+        "description": "Hurricane is a dark, stormy gray color that exudes strength and stability. It is often used in design to convey a sense of seriousness and reliability.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Pumice", "Gunsmoke", "NaturalGray", "DustyGray"],
+        "contrasting_colors": ["Red", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "LinkWater",
+        "description": "LinkWater is a very light, almost white blue color that evokes a sense of calm and serenity. It is often used to create a feeling of openness and space.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Tiara", "PaleSlate", "RockBlue", "Mercury"],
+        "contrasting_colors": ["Red", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "DoveGray",
+        "description": "DoveGray is a soft, neutral gray that exudes calmness and balance. It is often associated with tranquility and sophistication.",
+        "color_combination": "White, Black",
+        "similar_colors": ["DustyGray", "SilverChalice", "Mercury", "WildSand"],
+        "contrasting_colors": ["Red", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "DustyGray",
+        "description": "DustyGray is a medium gray with a slight brown undertone, often associated with stability and neutrality. It symbolizes practicality and reliability.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Pumice", "Gunsmoke", "NaturalGray", "Hurricane"],
+        "contrasting_colors": ["Red", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "RockBlue",
+        "description": "RockBlue is a medium-light blue with a grayish tone, often associated with calmness and reliability. It symbolizes stability and tranquility.",
+        "color_combination": "White, Black",
+        "similar_colors": ["PaleSlate", "LinkWater", "SilverChalice", "Mercury"],
+        "contrasting_colors": ["Red", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "SilverChalice",
+        "description": "SilverChalice is a soft, light gray that exudes calmness and neutrality. It is often used in design for its versatile and timeless appeal.",
+        "color_combination": "White, Black",
+        "similar_colors": ["PaleSlate", "DustyGray", "RockBlue", "Mercury"],
+        "contrasting_colors": ["Red", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "Mercury",
+        "description": "Mercury is a very light gray color, almost white, often associated with purity and simplicity. It symbolizes clarity and neutrality.",
+        "color_combination": "White, Black",
+        "similar_colors": ["PaleSlate", "LinkWater", "SilverChalice", "WildSand"],
+        "contrasting_colors": ["Red", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "WildSand",
+        "description": "WildSand is a light, neutral gray color that evokes a sense of calmness and balance. It is often associated with simplicity and elegance.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Mercury", "SilverChalice", "DoveGray", "DustyGray"],
+        "contrasting_colors": ["Red", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "Strikemaster",
+        "description": "Strikemaster is a dark, muted purple color that exudes elegance and mystery. It is often associated with creativity and luxury.",
+        "color_combination": "White, Black",
+        "similar_colors": ["DarkPurple", "TwilightLavender", "RedPurple", "ButterflyBush"],
+        "contrasting_colors": ["Red", "Green", "Yellow", "Gray"]
+      },
+      {
+        "name": "DarkPurple",
+        "description": "DarkPurple is a deep, rich purple color that symbolizes luxury, mystery, and sophistication. It is often associated with creativity and elegance.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Strikemaster", "TwilightLavender", "RedPurple", "ButterflyBush"],
+        "contrasting_colors": ["Red", "Green", "Yellow", "Gray"]
+      },
+      {
+        "name": "DarkBlue",
+        "description": "DarkBlue is a deep, rich blue color that symbolizes stability, trust, and depth. It is often associated with sophistication and intelligence.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Navy Blue", "Rich Blue", "Midnight Blue", "Royal Blue"],
+        "contrasting_colors": ["Red", "Green", "Yellow", "Orange"]
+      },
+      {
+        "name": "AzureBlue",
+        "description": "AzureBlue is a bright, vibrant blue color that evokes the clear sky and open spaces. It symbolizes freedom, tranquility, and calm.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Sky Blue", "Electric Blue", "Cerulean", "Cyan"],
+        "contrasting_colors": ["Red", "Green", "Yellow", "Orange"]
+      },
+      {
+        "name": "DarkCyan",
+        "description": "DarkCyan is a deep, rich teal color that evokes a sense of calm and sophistication. It is often associated with stability and tranquility.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Teal", "MediumTurquoise", "DarkTurquoise", "Cyan"],
+        "contrasting_colors": ["Red", "Yellow", "Orange", "Pink"]
+      },
+      {
+        "name": "LightLime",
+        "description": "LightLime is a bright, zesty green color that exudes energy and freshness. It is often associated with nature and vitality.",
+        "color_combination": "White, Black",
+        "similar_colors": ["LimeGreen", "YellowGreen", "LightGreen", "Chartreuse"],
+        "contrasting_colors": ["Red", "Purple", "Blue", "Brown"]
+      },
+      {
+        "name": "DarkSpringGreen",
+        "description": "DarkSpringGreen is a deep, vibrant green color that symbolizes growth and renewal. It is often associated with nature and vitality.",
+        "color_combination": "White, Black",
+        "similar_colors": ["SpringGreen", "ForestGreen", "DarkGreen", "MediumSeaGreen"],
+        "contrasting_colors": ["Red", "Purple", "Blue", "Brown"]
+      },
+      {
+        "name": "LightGreen",
+        "description": "LightGreen is a soft, fresh green color that evokes a sense of tranquility and renewal. It is often associated with nature and harmony.",
+        "color_combination": "White, Black",
+        "similar_colors": ["PaleGreen", "LimeGreen", "MintGreen", "LightLime"],
+        "contrasting_colors": ["Red", "Purple", "Blue", "Brown"]
+      },
+      {
+        "name": "Oldbrick",
+        "description": "Oldbrick is a warm, earthy red-brown color that exudes a sense of rustic charm and stability. It is often associated with tradition and reliability.",
+        "color_combination": "White, Black",
+        "similar_colors": ["BurntUmber", "ClayCreek", "RustyOrange", "GoldenBrown"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "SandDune",
+        "description": "SandDune is a warm, light brown color that evokes a sense of earthiness and natural beauty. It is often associated with stability and reliability.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Squirrel", "ClayCreek", "BurntUmber", "PottersClay"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "GraniteGreen",
+        "description": "GraniteGreen is a muted, gray-green color that exudes calmness and sophistication. It is often associated with nature and stability.",
+        "color_combination": "White, Black",
+        "similar_colors": ["OliveDrab", "PaleGreen", "SeaGreen", "Sage"],
+        "contrasting_colors": ["Red", "Blue", "Purple", "Orange"]
+      },
+      {
+        "name": "BrownGray",
+        "description": "BrownGray is a muted, earthy brown color that conveys a sense of stability and reliability. It is often associated with natural beauty.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Squirrel", "SoftAmber", "GraniteGreen", "SandDune"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "PastelOrange",
+        "description": "PastelOrange is a soft, warm orange color that evokes a sense of happiness and energy. It is often associated with joy and creativity.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Peach", "Apricot", "Coral", "LightSalmon"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "LightRose",
+        "description": "LightRose is a soft, pale pink color that exudes a sense of calm and gentleness. It is often associated with romance and tranquility.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Pink", "Peach", "LightCoral", "MistyRose"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Gray"]
+      },
+      {
+        "name": "GoldenBrown",
+        "description": "GoldenBrown is a rich, warm brown color with a hint of gold, often associated with warmth and luxury. It symbolizes stability and comfort.",
+        "color_combination": "White, Black",
+        "similar_colors": ["SoftAmber", "Goldenrod", "GoldenYellow", "BurntUmber"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "SelectiveYellow",
+        "description": "SelectiveYellow is a bright, bold yellow color that exudes energy and optimism. It is often associated with happiness and creativity.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Gold", "LemonYellow", "Amber", "Goldenrod"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "CoralRed",
+        "description": "CoralRed is a warm, vibrant red color with hints of orange, evoking a sense of energy and passion. It is often associated with warmth and vibrancy.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Coral", "Salmon", "Tomato", "Cinnabar"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "Cinnabar",
+        "description": "Cinnabar is a bright, warm red color with a slight orange undertone, often associated with energy and passion. It symbolizes vitality and strength.",
+        "color_combination": "White, Black",
+        "similar_colors": ["CoralRed", "Tomato", "PersianRed", "Crimson"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "PersianRed",
+        "description": "PersianRed is a deep, rich red color that exudes a sense of luxury and passion. It is often associated with strength and vitality.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Crimson", "Cinnabar", "CoralRed", "DeepCerise"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "DeepCerise",
+        "description": "DeepCerise is a vibrant, bold pink color with a hint of purple, often associated with creativity and energy. It symbolizes passion and vibrancy.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Fuchsia", "HotPink", "Cerise", "Magenta"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Gray"]
+      },
+      {
+        "name": "FoggyGray",
+        "description": "FoggyGray is a soft, muted gray color that exudes calmness and tranquility. It is often associated with misty mornings and subtle elegance.",
+        "color_combination": "White, Black",
+        "similar_colors": ["DoveGray", "DustyGray", "SilverChalice", "Mercury"],
+        "contrasting_colors": ["Red", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "ClayCreek",
+        "description": "ClayCreek is a warm, earthy brown color that evokes a sense of stability and natural beauty. It is often associated with tradition and reliability.",
+        "color_combination": "White, Black",
+        "similar_colors": ["BurntUmber", "Squirrel", "SandDune", "PottersClay"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "BurntUmber",
+        "description": "BurntUmber is a deep, rich brown color with a reddish undertone, often associated with earthiness and warmth. It symbolizes stability and comfort.",
+        "color_combination": "White, Black",
+        "similar_colors": ["ClayCreek", "Oldbrick", "RustyOrange", "GoldenBrown"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "RustyOrange",
+        "description": "RustyOrange is a warm, rich orange color with a hint of red, evoking a sense of warmth and energy. It is often associated with autumn and vibrancy.",
+        "color_combination": "White, Black",
+        "similar_colors": ["BurntUmber", "Oldbrick", "GoldenBrown", "CoralRed"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "Coffee",
+        "description": "Coffee is a deep, rich brown color that evokes a sense of warmth and comfort. It is often associated with stability and sophistication.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Espresso", "Mocha", "Chestnut", "Cocoa"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "Shadow",
+        "description": "Shadow is a dark, muted gray color that exudes a sense of mystery and depth. It is often associated with elegance and sophistication.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Charcoal", "SlateGray", "DoveGray", "FoggyGray"],
+        "contrasting_colors": ["Red", "Green", "Yellow", "Purple"]
+      },
+      {
+        "name": "PottersClay",
+        "description": "PottersClay is a warm, earthy brown color that evokes a sense of natural beauty and stability. It is often associated with tradition and reliability.",
+        "color_combination": "White, Black",
+        "similar_colors": ["BurntUmber", "ClayCreek", "SandDune", "Sienna"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "Crimson",
+        "description": "Crimson is a deep, vibrant red color that exudes passion and energy. It is often associated with love and intensity.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Scarlet", "Ruby", "PersianRed", "Cinnabar"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Gray"]
+      },
+      {
+        "name": "RedOrange",
+        "description": "RedOrange is a bright, fiery color that exudes energy and warmth. It is often associated with excitement and enthusiasm.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Coral", "Cinnabar", "Tomato", "PersianRed"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "GrayPink",
+        "description": "GrayPink is a soft, muted pink color with gray undertones, exuding a sense of calm and sophistication. It is often associated with subtle elegance.",
+        "color_combination": "White, Black",
+        "similar_colors": ["RoseQuartz", "DustyRose", "MistyRose", "LightPink"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Gray"]
+      },
+      {
+        "name": "TwilightLavender",
+        "description": "TwilightLavender is a deep, muted purple color that evokes a sense of mystery and elegance. It is often associated with sophistication and calm.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Plum", "Eggplant", "Purple", "MediumPurple"],
+        "contrasting_colors": ["Yellow", "Green", "Orange", "Gray"]
+      },
+      {
+        "name": "RedPurple",
+        "description": "RedPurple is a rich, vibrant color that combines the energy of red and the depth of purple. It is often associated with passion and creativity.",
+        "color_combination": "White, Black",
+        "similar_colors": ["DeepCerise", "Crimson", "Magenta", "Cerise"],
+        "contrasting_colors": ["Green", "Yellow", "Blue", "Gray"]
+      },
+      {
+        "name": "HopBush",
+        "description": "HopBush is a bright, lively pink color with a hint of purple, exuding a sense of energy and vibrancy. It is often associated with creativity and fun.",
+        "color_combination": "White, Black",
+        "similar_colors": ["HotPink", "DeepCerise", "BrilliantRose", "Fuchsia"],
+        "contrasting_colors": ["Green", "Yellow", "Blue", "Gray"]
+      },
+      {
+        "name": "ButterflyBush",
+        "description": "ButterflyBush is a rich, deep purple color that evokes a sense of mystery and luxury. It is often associated with sophistication and elegance.",
+        "color_combination": "White, Black",
+        "similar_colors": ["DeepPurple", "DarkViolet", "Plum", "Purple"],
+        "contrasting_colors": ["Yellow", "Green", "Orange", "Gray"]
+      },
+      {
+        "name": "BrilliantRose",
+        "description": "BrilliantRose is a bright, vibrant pink color that exudes energy and joy. It is often associated with fun and excitement.",
+        "color_combination": "White, Black",
+        "similar_colors": ["HotPink", "Fuchsia", "DeepCerise", "Cerise"],
+        "contrasting_colors": ["Green", "Yellow", "Blue", "Gray"]
+      },
+      {
+        "name": "MediumRedViolet",
+        "description": "MediumRedViolet is a rich, vibrant color that combines the depth of red and the elegance of violet. It is often associated with passion and creativity.",
+        "color_combination": "White, Black",
+        "similar_colors": ["DeepCerise", "RedPurple", "Magenta", "Cerise"],
+        "contrasting_colors": ["Green", "Yellow", "Blue", "Gray"]
+      },
+      {
+        "name": "BlackPearl",
+        "description": "BlackPearl is a deep, dark black color that exudes a sense of mystery and sophistication. It is often associated with elegance and power.",
+        "color_combination": "White, Gray",
+        "similar_colors": ["Black", "Charcoal", "JetBlack", "Raven"],
+        "contrasting_colors": ["White", "Yellow", "Red", "Blue"]
+      },
+      {
+        "name": "BlackBean",
+        "description": "BlackBean is a dark, rich brown color that exudes warmth and depth. It is often associated with stability and sophistication.",
+        "color_combination": "White, Gray",
+        "similar_colors": ["Espresso", "Coffee", "Mocha", "Chestnut"],
+        "contrasting_colors": ["Blue", "Green", "Yellow", "Gray"]
+      },
+      {
+        "name": "PumpkinOrange",
+        "description": "PumpkinOrange is a bright, warm orange color that exudes energy and vibrancy. It is often associated with autumn and excitement.",
+        "color_combination": "White, Black",
+        "similar_colors": ["CarrotOrange", "Tangerine", "Coral", "Amber"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "CarrotOrange",
+        "description": "CarrotOrange is a bright, vibrant orange color that exudes energy and warmth. It is often associated with happiness and creativity.",
+        "color_combination": "White, Black",
+        "similar_colors": ["PumpkinOrange", "Tangerine", "Coral", "Amber"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "DirtyYellow",
+        "description": "DirtyYellow is a muted, earthy yellow color that exudes a sense of warmth and subtlety. It is often associated with autumn and natural beauty.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Goldenrod", "Amber", "SandDune", "Mustard"],
+        "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      }
+]
