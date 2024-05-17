@@ -7,11 +7,11 @@ def set_imgLocation(loc):
     img = cv2.imread(img_path)
 
 # declaring global variables (are used later on)
-r = g = b = x_pos = y_pos = 0
+r = g = b = 0
 
 # Reading csv file with pandas and giving names to each column
-index = ["color", "hex", "R", "G", "B", "description"]
-csv = pd.read_csv('./new_colors.csv', names=index, header=None)
+index = ["color", "R", "G", "B", "hex"]
+csv = pd.read_csv('./colorshades.csv', names=index, header=None)
 
 
 # function to calculate minimum distance from all colors and get the most matching color
@@ -22,16 +22,15 @@ def get_color_name(R, G, B):
         if d <= minimum:
             minimum = d
             cname = csv.loc[i, "color"]
-            des = csv.loc[i, "description"]
+            des = csv.loc[i, "hex"]
     return cname,des
 
 def color_function(x, y):
-    global b, g, r, x_pos, y_pos 
+    global b, g, r
     x = int(x)
     y = int(y)
-    # x_pos = x
-    # y_pos = y
     b, g, r = img[y, x]
+    print(img[y,x])
     b = int(b)
     g = int(g)
     r = int(r)
