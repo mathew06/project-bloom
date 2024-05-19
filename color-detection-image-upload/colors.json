@@ -63,8 +63,8 @@
       "contrasting_colors": ["Black", "Charcoal", "Ebony", "Gray"]
     },
     {
-      "name": "Grey",
-      "description": "Grey is a neutral and versatile hue, often associated with balance, stability, and sophistication. It represents calmness, maturity, and resilience.",
+      "name": "Gray",
+      "description": "Gray is a neutral and versatile hue, often associated with balance, stability, and sophistication. It represents calmness, maturity, and resilience.",
       "color_combination": "White, Black",
       "similar_colors": ["Silver", "Charcoal", "Slate", "Ash"],
       "contrasting_colors": ["Red", "Blue", "Green", "Yellow"]
@@ -805,8 +805,8 @@
         "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
       },
       {
-        "name": "Firebrick",
-        "description": "Firebrick is a warm and earthy hue, often associated with strength, stability, and endurance. It represents the timeless appeal of brick buildings and the warmth of a cozy hearth.",
+        "name": "FireBrick",
+        "description": "FireBrick is a warm and earthy hue, often associated with strength, stability, and endurance. It represents the timeless appeal of brick buildings and the warmth of a cozy hearth.",
         "color_combination": "White, Black",
         "similar_colors": ["Indian Red", "Maroon", "Brown", "Sienna"],
         "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
@@ -948,7 +948,7 @@
         "name": "Gainsboro",
         "description": "Gainsboro is a soft and delicate hue, often associated with elegance, refinement, and sophistication. It represents the subtle charm of gray tones and the understated beauty of simplicity.",
         "color_combination": "White, Black",
-        "similar_colors": ["Light Grey", "Silver", "Light Slate Grey", "White Smoke"],
+        "similar_colors": ["Light Gray", "Silver", "Light Slate Gray", "White Smoke"],
         "contrasting_colors": ["Blue", "Green", "Yellow", "Pink"]
       },
       {
@@ -1111,6 +1111,48 @@
         "color_combination": "White, Black",
         "similar_colors": ["Steel Blue", "Sky Blue", "Light Blue", "Powder Blue"],
         "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
+      },
+      {
+        "name": "MineShaft",
+        "description": "MineShaft is a dark, almost black gray color that exudes a sense of mystery and elegance. It is often associated with modernity and sophistication.",
+        "color_combination": "White, Gray",
+        "similar_colors": ["Charcoal", "Jet", "Onyx", "Raven"],
+        "contrasting_colors": ["White", "Yellow", "Red", "Blue"]
+      },
+      {
+        "name": "DimGray",
+        "description": "DimGray is a medium-dark gray color that exudes a sense of neutrality and balance. It is often associated with sophistication and understated elegance.",
+        "color_combination": "White, Black",
+        "similar_colors": ["SlateGray", "Gray", "Charcoal", "Gunmetal"],
+        "contrasting_colors": ["Red", "Green", "Yellow", "Blue"]
+      },
+      {
+        "name": "SlateGray",
+        "description": "SlateGray is a medium-dark gray color with a slight hint of blue, evoking the cool, muted tones of natural slate stone. It is associated with stability and calmness.",
+        "color_combination": "White, Black",
+        "similar_colors": ["DimGray", "Gray", "SteelBlue", "DarkSlateGray"],
+        "contrasting_colors": ["Red", "Yellow", "Orange", "Purple"]
+      },
+      {
+        "name": "DarkGray",
+        "description": "DarkGray is a deep shade of gray that conveys a sense of strength and sophistication. It is often used to create contrast and add depth to designs.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Charcoal", "Gunmetal", "SlateGray", "Gray"],
+        "contrasting_colors": ["Red", "Green", "Blue", "Yellow"]
+      },
+      {
+        "name": "LightSlateGray",
+        "description": "LightSlateGray is a pale, muted gray color with a slight blue tint, resembling the color of natural slate in lighter shades. It conveys a sense of calmness and tranquility.",
+        "color_combination": "White, Black",
+        "similar_colors": ["SlateGray", "Silver", "Gainsboro", "LightGray"],
+        "contrasting_colors": ["Red", "Green", "Blue", "Yellow"]
+      },
+      {
+        "name": "DarkSlateGray",
+        "description": "DarkSlateGray is a deep, dark gray color with a hint of blue, resembling the color of slate stone. It exudes a sense of sophistication and elegance.",
+        "color_combination": "White, Black",
+        "similar_colors": ["SlateGray", "Charcoal", "Gunmetal", "DimGray"],
+        "contrasting_colors": ["Red", "Green", "Blue", "Yellow"]
       },
       {
         "name": "Pumice",
