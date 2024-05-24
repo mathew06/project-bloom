@@ -756,6 +756,13 @@
         "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
       },
       {
+        "name": "DarkRed",
+        "description": "DarkRed is a deep, intense red color that conveys strong emotions such as passion, power, and determination. It is often associated with strength and boldness.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Maroon", "Burgundy", "Crimson", "Firebrick"],
+        "contrasting_colors": ["Green", "Blue", "Cyan", "Yellow"]
+      },
+      {
         "name": "IndianRed",
         "description": "Indian Red is a warm and earthy hue, often associated with richness, tradition, and natural beauty. It represents the richness of Indian spices and the warmth of a cozy hearth.",
         "color_combination": "White, Black",
@@ -1323,7 +1330,7 @@
         "contrasting_colors": ["Red", "Purple", "Blue", "Brown"]
       },
       {
-        "name": "Oldbrick",
+        "name": "OldBrick",
         "description": "Oldbrick is a warm, earthy red-brown color that exudes a sense of rustic charm and stability. It is often associated with tradition and reliability.",
         "color_combination": "White, Black",
         "similar_colors": ["BurntUmber", "ClayCreek", "RustyOrange", "GoldenBrown"],
