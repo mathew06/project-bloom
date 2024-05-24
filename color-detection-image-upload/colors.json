@@ -497,6 +497,13 @@
         "contrasting_colors": ["Blue", "Green", "Purple", "Yellow"]
       },
       {
+        "name": "VeryDarkBrown",
+        "description": "VeryDarkBrown is an extremely deep brown color, often associated with richness, warmth, and earthiness. It conveys a sense of stability and reliability.",
+        "color_combination": "White, Beige",
+        "similar_colors": ["Black", "Charcoal", "DarkChocolate", "Chestnut"],
+        "contrasting_colors": ["White", "Cyan", "Yellow", "LightPink"]
+      },
+      {
         "name": "Burlywood",
         "description": "Burlywood is a warm and rustic hue, often associated with natural beauty, ruggedness, and simplicity. It represents the rugged charm of weathered wood and the timeless appeal of rustic decor.",
         "color_combination": "White, Black",
@@ -1559,5 +1566,19 @@
         "color_combination": "White, Black",
         "similar_colors": ["Goldenrod", "Amber", "SandDune", "Mustard"],
         "contrasting_colors": ["Blue", "Green", "Purple", "Gray"]
+      },
+      {
+        "name": "DarkSalmon",
+        "description": "DarkSalmon is a muted, darker shade of pinkish-orange, reminiscent of the color of cooked salmon. It conveys warmth and softness.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Salmon", "LightCoral", "RosyBrown", "PaleVioletRed"],
+        "contrasting_colors": ["Teal", "NavyBlue", "ForestGreen", "Turquoise"]
+      },
+      {
+        "name": "DarkCoral",
+        "description": "DarkCoral is a rich, deep shade of orange-red, reminiscent of coral reefs. It conveys warmth, energy, and a touch of sophistication.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Coral", "Salmon", "Tomato", "Firebrick"],
+        "contrasting_colors": ["Teal", "NavyBlue", "ForestGreen", "Turquoise"]
       }
 ]
