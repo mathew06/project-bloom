@@ -73,7 +73,7 @@ def home():
 
 @app.route('/imageupload')
 def imageupload():
-    return render_template('image_upload.html', image_filename='img.png')
+    return render_template('imageUpload.html', image_filename='img.png')
 
 @app.route('/camera')
 def camera():
@@ -106,7 +106,7 @@ def upload():
         loc = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(loc)
         set_imgLocation(loc)
-        return redirect(url_for('imageupload', image_filename=filename))
+        return jsonify({'image_filename': filename})
 
 # Route to handle image coordinate processing
 @app.route('/process_coordinates', methods=['POST'])
