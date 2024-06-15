@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom: Your Color Guide</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #6200ea;
+            color: #fff;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            width: 700px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        h2 {
+            color: #6200ea;
+            margin-bottom: 10px;
+        }
+        .form-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        input[type="file"] {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+            max-width: 300px;
+        }
+        input[type="submit"] {
+            background-color: #6200ea;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #3700b3;
+        }
+        #uploadedImage {
+            margin-top: 20px;
+            width: 700px;
+            height: 550px;
+            border-radius: 8px;
+            cursor: crosshair;
+            display: block;
+        }
+        .output-container {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #popup {
+            display: none;
+            position: absolute;
+            top: 10px; /* Adjust this value to position the popup just above the image */
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+            text-align: center;
+        }
+
+        #popup h2 {
+            margin: 0 0 10px;
+        }
+
+        #popup button {
+            background-color: #6200ea;
+            color: #fff;
+            border: none;
+            margin-top: 10px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #popup button:hover {
+            background-color: #3700b3;
+        }
+
+        #colorInfo {
+            background: #fafafa;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 600px) {
+            header {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            .container {
+                padding: 15px;
+            }
+            input[type="file"],
+            input[type="submit"] {
+                width: 100%;
+                max-width: none;
+            }
+            #popup {
+                width: 90%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bloom: Your Color Guide</h1>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <h2>Upload an Image</h2>
+            <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="image" accept="image/*" required />
+                <input type="submit" value="Upload" />
+            </form>
+        </div>
+        <div class="output-container" id="outputContainer">
+            <img id="uploadedImage" src="../static/Uploads/{{ image_filename }}" alt="Uploaded Image" onclick="getImageCoordinates(event)" width="">
+            <div id="popup">
+                <h2 id="colorname"></h2>
+                <button id="showMoreBtn" onclick="toggleDetails()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                    <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                  </svg>
+                </button>
+                <div id="details" style="display: none;">
+                    <h2 id="hex"></h2>
+                    <div id="colorInfo"></div>
+                    <button id="showLessBtn" onclick="toggleDetails()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z"/>
+                        <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
+                      </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            var formData = new FormData(this);
+
+            fetch('/upload', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Assuming the server responds with the image URL
+                document.getElementById('uploadedImage').src = `../static/Uploads/${data.image_filename}`;
+                document.getElementById('outputContainer').style.display = 'block';
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+        
+        function getImageCoordinates(event) {
+            var image = document.getElementById('uploadedImage');
+            var rect = image.getBoundingClientRect();
+            var x = event.clientX - rect.left;
+            var y = event.clientY - rect.top;
+            console.log("X Coordinate: " + x + ", Y Coordinate: " + y);
+            fetch('/process_coordinates', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ x: x, y: y })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('colorname').innerText = "Color: " + data.result[0];
+                document.getElementById('hex').innerText = "Hex: #" + data.result[1];
+                document.getElementById('colorInfo').innerHTML = `
+                    <p>${data.result[2].description}</p>
+                    <p><strong>Similar Colors:</strong> ${data.result[2].similar_colors.join(', ')}</p>
+                    <p><strong>Contrasting Colors:</strong> ${data.result[2].contrasting_colors.join(', ')}</p>
+                `;
+                var popup = document.getElementById('popup');
+                popup.style.display = 'block';
+                document.addEventListener('click', hidePopupOnClickOutside);
+            })
+            .catch(error => console.error('Error:', error));
+        }
+        document.getElementById('uploadedImage').addEventListener('click', function() {
+            var popup = document.getElementById('popup');
+            if (popup.style.display === 'block') {
+                popup.style.display = 'none';
+            }
+        });
+        function toggleDetails() {
+            var details = document.getElementById('details');
+            var showMoreBtn = document.getElementById('showMoreBtn');
+            var showLessBtn = document.getElementById('showLessBtn');
+            if (details.style.display === 'none') {
+                details.style.display = 'block';
+                showMoreBtn.style.display = 'none';
+            } else {
+                details.style.display = 'none';
+                showMoreBtn.style.display = 'inline-block';
+            }
+        }
+        function hidePopupOnClickOutside(event) {
+            var image = document.getElementById('uploadedImage');
+            var popup = document.getElementById('popup');
+            var imageRect = image.getBoundingClientRect();
+            var popupRect = popup.getBoundingClientRect();
+            if (!isClickInsideRect(event, imageRect) && !isClickInsideRect(event, popupRect)) {
+                popup.style.display = 'none';
+                // Remove the event listener after hiding the popup
+                document.removeEventListener('click', hidePopupOnClickOutside);
+            }
+        }
+        function isClickInsideRect(event, rect) {
+            return event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom;
+        }
+        document.getElementById('uploadedImage').addEventListener('click', function(event) {
+            var popup = document.getElementById('popup');
+            if (popup.style.display === 'none') {
+                popup.style.display = 'block';
+                // Add an event listener to hide the popup when clicking outside the image
+                document.addEventListener('click', hidePopupOnClickOutside);
+            }
+        });
+    </script>
+</body>
+</html>
