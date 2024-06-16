@@ -1594,5 +1594,12 @@
         "color_combination": "White, Black",
         "similar_colors": ["ForestGreen", "SeaGreen", "DarkOliveGreen", "OliveDrab"],
         "contrasting_colors": ["Red", "Magenta", "Orange", "Yellow"]
+      },
+      {
+        "name": "CopperRose",
+        "description": "CopperRose is a warm, muted pinkish-brown color, evoking the soft and elegant hues of aged copper with a rosy tint. It conveys a sense of sophistication and subtle beauty.",
+        "color_combination": "White, Black",
+        "similar_colors": ["RosyBrown", "DustyRose", "OldRose", "Mauve"],
+        "contrasting_colors": ["Teal", "ForestGreen", "NavyBlue", "Turquoise"]
       }
 ]
