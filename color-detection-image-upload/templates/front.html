@@ -7,10 +7,11 @@
     <style>
         /* CSS styles go here */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f2ead7;
+            color: #744523;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -22,13 +23,13 @@
         }
 
         h1 {
-            font-size: 36px;
+            font-size: 40px;
             margin: 10px 0;
             font-weight: lighter;
         }
 
         p {
-            font-size: 24px;
+            font-size: 30px;
             margin: 10px 0;
         }
     </style>
@@ -37,7 +38,7 @@
     <div class="container">
         <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" width="200">
         <h1>Bloom:</h1>
-        <p>Your Colour Guide</p>
+        <p>Your Color Guide</p>
     </div>
     <script>
         setTimeout(function()

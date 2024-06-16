@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Vision Test</title>
+    <title>Bloom: Your Color Guide</title>
     <style>
-        /* CSS styles go here */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
+            background-color: #f2ead7;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -22,12 +21,13 @@
         }
 
         h1 {
-            font-size: 24px;
+            font-size: 30px;
             margin: 10px 0;
+            color: #744523;
         }
 
         img {
-            width: 300px; /* Adjust image width as needed */
+            width: 300px;
         }
 
         .btn {
@@ -37,7 +37,8 @@
             margin: 5% auto;
             text-align: center;
             background-color: #f0f0f0;
-            color: #333;
+            color: #744523;
+            font-size: 20px;
             border: none;
             border-radius: 20px;
             cursor: pointer;
@@ -59,7 +60,6 @@
     </div>
 
     <script>
-        // JavaScript code goes here
         function answer(number) {
             if (number === '12') {
                 window.location.href = "{{ url_for('test2')}}";
