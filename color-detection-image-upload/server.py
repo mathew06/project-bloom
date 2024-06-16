@@ -1,10 +1,20 @@
-from flask import Flask, render_template, request, redirect, url_for, jsonify
-from clrdtctn import color_function
-from clrdtctn import set_imgLocation
-from imageResize import resize_image
+from flask import Flask, render_template, request, redirect, url_for, jsonify, session
+from werkzeug.utils import secure_filename
+from flask_session import Session
+import uuid
+import time
+from apscheduler.schedulers.background import BackgroundScheduler
+import atexit
 import os
+from clrdtctn import color_function
+from imageResize import resize_image
 
 app = Flask(__name__)
+app.config['SESSION_TYPE'] = 'filesystem'
+app.config['SESSION_FILE_DIR'] = './flask_session/'
+app.config['SESSION_PERMANENT'] = False
+
+Session(app)
 
 # Configure upload folder
 UPLOAD_FOLDER = './static/Uploads'
@@ -73,7 +83,9 @@ def home():
 
 @app.route('/imageupload')
 def imageupload():
-    return render_template('imageUpload.html', image_filename='img.png')
+    # Fetch the image path from the session
+    image = session.get('image')
+    return render_template('imageUpload.html', image_name=image)
 
 @app.route('/camera')
 def camera():
@@ -87,7 +99,7 @@ def process_frame():
     image_path = os.path.join(app.config['UPLOAD_FOLDER'], 'frame.jpg')
     # Save the image to the server
     image_data.save(image_path)
-    set_imgLocation(image_path)
+    #set_imgLocation(image_path)
     result = color_function(500, 375)
     return jsonify({'result': result})
 
@@ -100,12 +112,15 @@ def upload():
     if file.filename == '':
         return 'No selected file'
     if file:
-        filename = 'img.png'
+        # Ensure unique filename
+        unique_id = str(uuid.uuid4())
+        filename = secure_filename(f"{unique_id}_{file.filename}")
         # Resize the image
         file = resize_image(file)
         loc = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(loc)
-        set_imgLocation(loc)
+        # Store file paths in session
+        session['image'] = loc
         return jsonify({'image_filename': filename})
 
 # Route to handle image coordinate processing
@@ -114,9 +129,31 @@ def process_coordinates():
     data = request.json
     x = data.get('x')
     y = data.get('y')
+    image_path = session.get('image')
     # Process the coordinates as needed
-    result = color_function(x, y)
+    result = color_function(image_path,x, y)
     return jsonify({'result': result})
+
+# Clean up function to remove all files older than 5 minutes
+def cleanup_upload_folder():
+    folder = app.config['UPLOAD_FOLDER']
+    now = time.time()
+    cutoff = now - 5 * 60 # 5 minutes ago
+
+    for filename in os.listdir(folder):
+        filepath = os.path.join(folder, filename)
+        if os.path.isfile(filepath):
+            if os.stat(filepath).st_mtime < cutoff:
+                os.remove(filepath)
+                print(f"Deleted {filepath}")
+
+# Setup a scheduler to run the cleanup function periodically
+scheduler = BackgroundScheduler()
+scheduler.add_job(func=cleanup_upload_folder, trigger="interval", minutes=1)
+scheduler.start()
+
+# Shut down the scheduler when exiting the app
+atexit.register(lambda: scheduler.shutdown())
 
 if __name__ == '__main__':
     app.run(debug=True)
