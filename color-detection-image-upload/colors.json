@@ -1580,5 +1580,19 @@
         "color_combination": "White, Black",
         "similar_colors": ["Coral", "Salmon", "Tomato", "Firebrick"],
         "contrasting_colors": ["Teal", "NavyBlue", "ForestGreen", "Turquoise"]
+      },
+      {
+        "name": "SpicyMix",
+        "description": "SpicyMix is a warm, muted brownish-red color, reminiscent of a blend of spices. It conveys a sense of earthiness and warmth.",
+        "color_combination": "White, Black",
+        "similar_colors": ["RosyBrown", "Sienna", "Peru", "IndianRed"],
+        "contrasting_colors": ["Teal", "Cyan", "Blue", "Green"]
+      },
+      {
+        "name": "MediumForestGreen",
+        "description": "MediumForestGreen is a rich, natural green color that evokes the lushness of forest foliage. It symbolizes growth, freshness, and stability.",
+        "color_combination": "White, Black",
+        "similar_colors": ["ForestGreen", "SeaGreen", "DarkOliveGreen", "OliveDrab"],
+        "contrasting_colors": ["Red", "Magenta", "Orange", "Yellow"]
       }
 ]
