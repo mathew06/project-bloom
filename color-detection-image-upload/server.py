@@ -89,7 +89,7 @@ def imageupload():
 
 @app.route('/camera')
 def camera():
-    return render_template('camera.html')
+    return render_template('opencamera.html')
 
 @app.route('/process_frame', methods=['POST'])
 def process_frame():
@@ -99,8 +99,9 @@ def process_frame():
     image_path = os.path.join(app.config['UPLOAD_FOLDER'], 'frame.jpg')
     # Save the image to the server
     image_data.save(image_path)
-    #set_imgLocation(image_path)
-    result = color_function(500, 375)
+    session['image'] = image_path
+    img_path = session.get('image')
+    result = color_function(img_path,500, 375)
     return jsonify({'result': result})
 
 # Route to handle file upload
