@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom: Live Camera Feed</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2ead7;
+            color: #744523;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #744523;
+            color: #fff;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            width: 700px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        #video-container {
+            width: 700px;
+            height: 550px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+        #cross {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            border: 2px white solid;
+            pointer-events: none;
+        }
+        #toggle-btn {
+            display: none;
+            padding: 1px 5px;
+            border: 1px white solid;
+            border-radius: 6px;
+            background-color: #744523;
+            color: #fff;
+        }
+        #toggle-icon{
+            padding-top: 3px;
+        }
+        .output-container h2 {
+            color: #744523;
+        }
+        #popup {
+            display: none;
+            margin-left: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(242, 235, 214, 0.9);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+            text-align: center;
+        }
+
+        #popup button {
+            background-color: #744523;
+            color: #fff;
+            border: none;
+            margin-top: 10px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #popup button:hover {
+            background-color: #692d04;
+        }
+        #colorname {
+            margin: 0px;
+        }
+        #colorInfo {
+            background: #f8f8f8;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin-top: 0px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 600px) {
+            header {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            .container {
+                padding: 15px;
+                width: 90%;
+            }
+            #video-container {
+                width: 100%;
+                height: auto;
+            }
+            #toggle-btn {
+                display: inline;
+            }
+            #popup {
+                width: 90%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bloom: Your Color Guide</h1>
+    </header>
+    <div class="container">
+        <button id="toggle-btn"><svg id="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+            <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+            <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+        </svg></button>
+        <div id="video-container">
+            <video id="video" autoplay playsinline></video>
+            <div id="cross"></div>
+            <canvas id="canvas" width="1000" height="750" style="display:none;"></canvas>
+        </div>
+        <div class="output-container">
+            <div id="popup">
+                <h2 id="colorname"></h2>
+                <button id="showMoreBtn" onclick="toggleDetails()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                    <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                  </svg>
+                </button>
+                <div id="details" style="display: none;">
+                    <div id="colorInfo"></div>
+                    <button id="showLessBtn" onclick="toggleDetails()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z"/>
+                        <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
+                      </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const videoElement = document.getElementById('video');
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        let currentStream = null;
+        let front;
+        if (window.navigator.userAgent.match(/Android/i)||window.navigator.userAgent.match(/iPhone/i)) {
+            front = false;
+        }else {
+            front = true;
+        }
+        //Camera toggle
+        document.getElementById('toggle-btn').onclick = () => {
+            front = !front;
+            startCamera();
+        };
+
+        // Get access to the device camera
+        function startCamera() {
+            if (currentStream) {
+                currentStream.getTracks().forEach(track => track.stop());
+            }
+            navigator.mediaDevices.getUserMedia({ video: { facingMode: front ? "user" : "environment" } })
+                .then(function (stream) {
+                    if(front){
+                        video.style.webkitTransform = "scaleX(-1)";
+                        video.style.transform       = "scaleX(-1)";
+                    }else {
+                        video.style.webkitTransform = "none";
+                        video.style.transform       = "none";
+                    }
+                    currentStream = stream;
+                    videoElement.srcObject = stream;
+                })
+                .catch(function (err) {
+                    console.error('Error accessing the camera:', err);
+                });
+        }
+        startCamera()
+        // Function to capture and send each frame to the backend
+        function captureAndSendFrame() {
+            ctx.drawImage(videoElement, 0, 0, canvas.width, canvas.height);
+            canvas.toBlob(function(blob) {
+                const formData = new FormData();
+                formData.append('image', blob, 'frame.jpg');
+                fetch('/process_frame', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('colorname').innerText = "Color: " + data.result[0];
+                    document.getElementById('colorInfo').innerHTML = `
+                        <p>${data.result[2].description}</p>
+                        <p><strong>Similar Colors:</strong> ${data.result[2].similar_colors.join(', ')}</p>
+                        <p><strong>Contrasting Colors:</strong> ${data.result[2].contrasting_colors.join(', ')}</p>
+                        <p><strong>Hex:</strong> #${ data.result[1]}
+                    `;
+                    var popup = document.getElementById('popup');
+                    popup.style.display = 'block';
+                })
+                .catch(error => console.error('Error:', error));
+            }, 'image/jpg');
+        }
+        function toggleDetails() {
+            var details = document.getElementById('details');
+            var showMoreBtn = document.getElementById('showMoreBtn');
+            var showLessBtn = document.getElementById('showLessBtn');
+            if (details.style.display === 'none') {
+                details.style.display = 'block';
+                showMoreBtn.style.display = 'none';
+            } else {
+                details.style.display = 'none';
+                showMoreBtn.style.display = 'inline-block';
+            }
+        }
+        // Capture and send each frame at regular intervals
+        setInterval(captureAndSendFrame, 500);
+    </script>
+</body>
+</html>
