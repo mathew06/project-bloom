@@ -1601,5 +1601,12 @@
         "color_combination": "White, Black",
         "similar_colors": ["RosyBrown", "DustyRose", "OldRose", "Mauve"],
         "contrasting_colors": ["Teal", "ForestGreen", "NavyBlue", "Turquoise"]
+      },
+      {
+        "name": "MediumAquamarine",
+        "description": "MediumAquamarine is a bright, fresh shade of greenish-blue, reminiscent of clear tropical waters. It conveys a sense of calmness, clarity, and refreshment.",
+        "color_combination": "White, Black",
+        "similar_colors": ["Aquamarine", "PaleTurquoise", "Turquoise", "MediumTurquoise"],
+        "contrasting_colors": ["Red", "Orange", "Purple", "DarkRed"]
       }
 ]

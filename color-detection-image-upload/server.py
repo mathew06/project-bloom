@@ -67,7 +67,7 @@ def monocromatic():
 
 @app.route('/oops',methods=['GET','POST'])
 def oops():
-    return render_template('oops.html')
+    return render_template('Oops.html')
 
 @app.route('/protonopia',methods=['GET','POST'])
 def protonopia():
@@ -116,8 +116,11 @@ def upload():
         # Ensure unique filename
         unique_id = str(uuid.uuid4())
         filename = secure_filename(f"{unique_id}_{file.filename}")
-        # Resize the image
-        file = resize_image(file)
+        mobile = request.form.get('mobile')
+        if mobile == '0'  :
+            file = resize_image(700,550,file)
+        else:
+            file = resize_image(350,275,file)
         loc = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(loc)
         # Store file paths in session
