@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloom: Live Camera Feed</title>
+    <title>Bloom: Your Color Guide</title>
     <style>
         body {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -49,7 +49,7 @@
             height: 100%;
             border-radius: 8px;
         }
-        #cross {
+        /* #cross {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -60,6 +60,35 @@
             border-radius: 50%;
             border: 2px white solid;
             pointer-events: none;
+        } */
+        #cross {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 33px;
+            height: 33px;
+            pointer-events: none;
+        }
+        #cross::before, #cross::after {
+            content: '';
+            position: absolute;
+            background-color: black;
+            border: 1px solid #5a5a5a;
+        }
+        #cross::before {
+            width: 2px;
+            height: 100%;
+            left: 50%;
+            top: -5%;
+            transform: translateX(-50%);
+        }
+        #cross::after {
+            width: 100%;
+            height: 2px;
+            top: 50%;
+            left: 0%;
+            transform: translateY(-50%);
         }
         #toggle-btn {
             display: none;
@@ -115,6 +144,7 @@
         @media (max-width: 600px) {
             header {
                 padding: 15px;
+                font-size: small;
             }
             h1 {
                 font-size: 1.5em;
@@ -122,6 +152,7 @@
             .container {
                 padding: 15px;
                 width: 90%;
+                font-size: small;
             }
             #video-container {
                 width: 100%;
@@ -139,7 +170,13 @@
 </head>
 <body>
     <header>
-        <h1>Bloom: Your Color Guide</h1>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h1 style="margin-left: 20px; padding: 0; font-size: 1.5em;">Bloom: Your Color Guide</h1>
+            <nav>
+                <a href="{{url_for('home')}}" style="color: #fff; text-decoration: none; margin-left: 20px;">Home</a>
+                <a href="{{url_for('test1')}}" style="color: #fff; text-decoration: none; margin: 20px;">Ishihara Test</a>
+            </nav>
+        </div>
     </header>
     <div class="container">
         <button id="toggle-btn"><svg id="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
