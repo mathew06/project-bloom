@@ -12,7 +12,15 @@
             background-color: #f2ead7;
             color: #744523;
         }
-
+        header {
+            background-color: #744523;
+            color: #fff;
+            width: 100%;
+            height: 40px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
         .container {
             padding: 20px;
         }
@@ -43,12 +51,32 @@
         .btn:hover {
             background-color: #e9ecef;
         }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 15px;
+                font-size: small;
+            }
+            .container {
+                padding: 15px;
+                width: 90%;
+                font-size: small;
+            }
+        }
     </style>
 </head>
 <body>
+    <header style="background-color: #744523; color: #fff; padding: 15px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; max-width: 700px; margin: 0 auto;">
+            <h1 style="margin: 0; font-size: 1.5em;">Bloom: Your Color Guide</h1>
+            <nav>
+                <a href="{{url_for('home')}}" style="color: #fff; text-decoration: none; margin-left: 20px;">Home</a>
+                <a href="{{url_for('test1')}}" style="color: #fff; text-decoration: none; margin-left: 20px;">Ishihara Test</a>
+            </nav>
+        </div>
+    </header>
     <div class="container">
-
-        <h2>Bloom: Your Color Guide</h2>
+        <!-- <h2>Bloom: Your Color Guide</h2> -->
         <button class="btn" onclick="openCamera()">Open Camera</button>
         <button class="btn" onclick="imageUpload()">Upload from Gallery</button>
     </div>
