@@ -23,10 +23,19 @@ def color_function(img_path,x, y):
     img = cv2.imread(img_path)
     x = int(x)
     y = int(y)
-    b, g, r = img[y, x]
-    b = int(b)
-    g = int(g)
-    r = int(r)
-    color = get_color_name(r, g, b)
+    # Get the BGR values of the 8-adjacent pixels and the center pixel
+    pixels = [
+        img[y-1, x-1], img[y-1, x], img[y-1, x+1],
+        img[y, x-1],   img[y, x],   img[y, x+1],
+        img[y+1, x-1], img[y+1, x], img[y+1, x+1]
+    ]
+
+    # Calculate the average BGR values
+    b_avg = int(sum([pixel[0] for pixel in pixels]) / 9)
+    g_avg = int(sum([pixel[1] for pixel in pixels]) / 9)
+    r_avg = int(sum([pixel[2] for pixel in pixels]) / 9)
+
+    # Get the color name based on the average BGR values
+    color = get_color_name(r_avg, g_avg, b_avg)
     return color
     
